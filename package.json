@@ -1,0 +1,26 @@
+{
+    "name": "bootstrap-template"
+  , "description": "Bootstrap Template Project"
+  , "version": "0.1.0"
+  , "keywords": ["bootstrap", "html5", "css3", "less", "js", "jquery"]
+  , "homepage": "http://www.spektrakel.de"
+  , "author": "David Herges <david@spektrakel.de>"
+  , "repository": {
+      "type": "git"
+    , "url": "https://github.com/dherges/bootstrap-template.git"
+  }
+  , "licenses": [
+    {
+        "type": "MIT"
+      , "url": "http://opensource.org/licenses/MIT"
+    }
+  ]
+  , "devDependencies": {
+      "jshint": "0.9.1"
+    , "bootstrap": "git://github.com/twitter/bootstrap.git#v2.3.1"
+    , "nopt": "2.1.1"
+    , "recess": "1.1.6"
+    , "uglify-js": "1.3.4"
+    , "underscore": "1.4.4"
+  }
+}

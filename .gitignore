@@ -1,0 +1,17 @@
+# project files
+dist
+build/reports
+
+# npm
+node_modules
+
+# Mac OS X
+.DS_Store
+
+# eclipse
+.buildpath
+.classpath
+.project
+.settings
+.externalToolBuilders
+

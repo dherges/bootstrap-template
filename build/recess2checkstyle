@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+require('./lib/recess/checkstyle-cli.js')(process.argv)
