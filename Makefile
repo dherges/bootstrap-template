@@ -1,12 +1,12 @@
 #
-# Bootstrap Template Build Tools
+# Bootstrap Template Project
 #
 DATE  = $(shell date +%I:%M%p)
 CHECK = \033[32m✔\033[39m
 HR    = \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
 
-# Directories
+### Project Directories
 DIR_BUILD    = build/
 DIR_REPORTS  = ${DIR_BUILD}reports/
 DIR_SRC      = src/
@@ -18,6 +18,7 @@ DIR_DIST_JS  = ${DIR_DIST}js/
 DIR_DIST_CSS = ${DIR_DIST}css/
 DIR_DIST_IMG = ${DIR_DIST}img/
 
+### Project Files
 # Source Files: add more .less and .js sources here
 JS_SRC             = ${DIR_SRC_JS}myproject.js
 LESS               = ${DIR_SRC_LESS}myproject.less
@@ -35,19 +36,24 @@ REPORT_JSHINT_CHECKSTYLE = ${DIR_REPORTS}jshint.checkstyle.xml
 REPORT_RECESS            = ${DIR_REPORTS}recess.log
 REPORT_RECESS_CHECKSTYLE = ${DIR_REPORTS}recess.checkstyle.xml
 
-# Executables
+### Executables
 JSHINT   = ./node_modules/.bin/jshint --config ${DIR_BUILD}jshint.rc
 UGLIFYJS = ./node_modules/.bin/uglifyjs
 RECESS   = ./node_modules/.bin/recess --config ${DIR_BUILD}recess.json
 RECESSCS = ./build/recess2checkstyle --config ${DIR_BUILD}recess.json
+BOWER    = ./node_modules/.bin/bower
 
 
-# Make target definitions
+### Default make target
 build: build-start \
-       package-bootstrap \
+       pkg-res \
        recess recess-report recess-compile \
        jshint jshint-report uglifyjs \
        build-finished
+
+.PHONY: build build-start build-finished pkg-res \
+        recess recess-report recess-compile \
+        jshint jshint-report uglifyjs
 
 build-start:
 	@echo "\n${HR}"
@@ -67,20 +73,23 @@ build-finished:
 	@echo "${HR}\n"
 
 
-# Package Bootstrap's javascript and image files
-### NOTE: we simply copy bootstrap's precompiled javascript and img files
-package-bootstrap:
+### Package static resources (such as bootstrap.js, jquery.js, and images)
+# NOTE: we simply copy these files to the dist directory
+pkg-res:
 	@echo "Packaging resource files..."
-	@cp -r node_modules/bootstrap/docs/assets/js/bootstrap.js ${DIR_DIST_JS}
-	@cp -r node_modules/bootstrap/docs/assets/js/bootstrap.min.js ${DIR_DIST_JS}
-	@cp -r node_modules/bootstrap/docs/assets/js/html5shiv.js ${DIR_DIST_JS}
-	@cp -r node_modules/bootstrap/docs/assets/js/jquery.js ${DIR_DIST_JS}
-	@cp -r node_modules/bootstrap/img/ ${DIR_DIST_IMG}
+	@cp -r components/bootstrap/docs/assets/js/bootstrap.js ${DIR_DIST_JS}
+	@cp -r components/bootstrap/docs/assets/js/bootstrap.min.js ${DIR_DIST_JS}
+	@cp -r components/bootstrap/docs/assets/js/html5shiv.js ${DIR_DIST_JS}
+	@cp -r components/bootstrap/img/ ${DIR_DIST_IMG}
+	@cp -r components/jquery/jquery.js ${DIR_DIST_JS}
+	@cp -r components/jquery/jquery.min.js ${DIR_DIST_JS}
+	@cp -r components/less/dist/less-1.3.3.js ${DIR_DIST_JS}
+	@cp -r components/less/dist/less-1.3.3.min.js ${DIR_DIST_JS}
 	@cp -r ${DIR_SRC_IMG} ${DIR_DIST_IMG}
 	@echo "Packaged files.                       ${CHECK} Done"
 
 
-# Less Targets
+### Less Targets
 recess:
 	@echo "Running RECESS linter..."
 	@${RECESS} ${LESS} ${LESS_RESPONSIVE}
@@ -101,7 +110,7 @@ recess-compile:
 	@echo "Compiled less.                              ${CHECK} Done"
 
 
-# JavaScript Targets
+### JavaScript Targets
 jshint:
 	@echo "Running JSHint on javascript source..."
 	@${JSHINT} ${JS_SRC} || true
@@ -120,9 +129,11 @@ uglifyjs:
 	@echo "Compiled and minified javascript.           ${CHECK} Done"
 
 
-# NPM Dependencies
-npm-deps:
+### Bower/NPM Dependencies
+component-deps:
+	@${BOWER} install
+
+package-deps:
 	@npm install
 
-
-.PHONY: build build-start build-finished package-bootstrap recess recess-report recess-compile jshint jshint-report uglifyjs npm-deps
+.PHONY: component-deps npm-deps

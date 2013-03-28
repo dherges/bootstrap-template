@@ -1,17 +1,13 @@
 # project files
-dist
 build/reports
-
-# npm
+components
+dist
 node_modules
 
-# Mac OS X
+# Mac OS and Eclipse
 .DS_Store
-
-# eclipse
 .buildpath
 .classpath
 .project
 .settings
 .externalToolBuilders
-
