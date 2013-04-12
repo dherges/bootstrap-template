@@ -1,0 +1,12 @@
+{
+    "noIDs":                "error"
+  , "noJSPrefix":           "error"
+  , "noOverqualifying":     "warning"
+  , "noUnderscores":        "error"
+  , "noUniversalSelectors": "warning"
+  , "Parse":                "error"
+  , "prefixWhitespace":     "ignore"
+  , "strictPropertyOrder":  "info"
+  , "zeroUnits":            "info"
+  , "defaultError":         "warning"
+}

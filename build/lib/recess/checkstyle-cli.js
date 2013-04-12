@@ -21,63 +21,90 @@
  */
 'use strict';
 
-module.exports = function(argv) {
+module.exports = function (argv) {
 
   var recess = require('recess')
-	, fs = require('fs')
-	, nopt = require('nopt')
-	, checkstyleReporter = require('./reporters/checkstyle.js')
-	, reporter = new checkstyleReporter()
-	, nopts
-	, shorthand
-	, options
-	, paths
+    , fs = require('fs')
+    , nopt = require('nopt')
+    , path = require('path')
+    , checkstyleReporter = require('./reporters/checkstyle.js')
+    , mapping = {}
+    , nopts
+    , options
+    , outputFile
+    , paths
+    , recessOptions
+    , reporter
+    , shorthand
 
 
-  //define and parse options
-  nopts = { config: String }
-  shorthand = { 'c': ['--config'] }
+  // define and parse options
+  nopts = {
+    config: String
+  , mapping: String
+  , output: String
+  }
+  shorthand = {
+    'c': ['--config']
+  , 'm': ['--mapping']
+  , 'o': ['--output']
+  }
   options = nopt(nopts, shorthand, argv)
 
-  //get paths
+  // get paths
   paths = options.argv.remain
 
-  //read config.json file
-  options.config && fs.existsSync(options.config) && (options = JSON.parse(fs.readFileSync(options.config)))
-  options.cli = false
-  options.stripColors = true
+  // read mapping.json file
+  options.mapping && fs.existsSync(options.mapping) && (mapping = JSON.parse(fs.readFileSync(options.mapping)))
+  reporter = new checkstyleReporter(mapping)
 
-  //run build & callback
-  recess(paths, options, function (err, instances) {
-	if (err) throw err
-	reporter.startReport();
+  // read config.json file
+  options.config && fs.existsSync(options.config) && (recessOptions = JSON.parse(fs.readFileSync(options.config)))
+  recessOptions.cli = false
+  recessOptions.stripColors = true
 
-	// for each file, we get one instance
-	instances
-	  && instances.length
-	  && instances.forEach(function(instance) {
 
-		reporter.startFile(instance.path);
+  // run build & process callback
+  recess(paths, recessOptions, function (err, instances) {
+    if (err) throw err
+    reporter.startReport();
 
-		// loop over definitions to get errors
-		instance.definitions
-		  && instance.definitions.length
-		  && instance.definitions.forEach(function (def) {
+    // for each file, we get one instance
+    instances
+      && instances.length
+      && instances.forEach(function (instance) {
 
-			// report that error
-			def.errors
-			  && def.errors.length
-			  && def.errors.forEach(function (err) {
+        // write compiled css code to output directory
+        outputFile = path.resolve(path.normalize(options.output + '/' + path.basename(instance.path)))
+        options.output
+          && fs.existsSync(options.output)
+          && fs.statSync(options.output).isDirectory()
+          && fs.writeFileSync(outputFile, instance.data)
 
-				reporter.logError(err);
-			  });
-		  });
+        // start <file> tag in checkstyle.xml
+        reporter.startFile((options.output) ? outputFile : instance.path);
 
-		reporter.endFile();
-	  });
+        // loop over definitions to get errors
+        instance.definitions
+          && instance.definitions.length
+          && instance.definitions.forEach(function (def) {
 
-	reporter.endReport();
-	console.log(reporter.report);
+            // report that error
+            def.errors
+              && def.errors.length
+              && def.errors.forEach(function (err) {
+
+                // log an <error> tag in checkstyle.xml
+                reporter.logError(err);
+              });
+          });
+
+        // end a </file> tag in checkstyle.xml
+        reporter.endFile();
+      });
+
+    reporter.endReport();
+    console.log(reporter.report);
   });
 
 }

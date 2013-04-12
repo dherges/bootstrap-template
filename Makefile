@@ -40,7 +40,7 @@ REPORT_RECESS_CHECKSTYLE = ${DIR_REPORTS}recess.checkstyle.xml
 JSHINT   = ./node_modules/.bin/jshint --config ${DIR_BUILD}jshint.rc
 UGLIFYJS = ./node_modules/.bin/uglifyjs
 RECESS   = ./node_modules/.bin/recess --config ${DIR_BUILD}recess.json
-RECESSCS = ./build/recess2checkstyle --config ${DIR_BUILD}recess.json
+RECESSCS = ./build/recess2checkstyle --config ${DIR_BUILD}recess.json --mapping ${DIR_BUILD}mapping.json
 BOWER    = ./node_modules/.bin/bower
 
 

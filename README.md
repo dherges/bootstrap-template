@@ -3,12 +3,23 @@ bootstrap-template
 
 A project template to quickly kick-off a project based on Twitter's Bootstrap framework.
 
+# Kick-Off
+
+Checkout or download, then
+
+	cd {my-project-directory}
+	npm install
+	bower install
+	make
+
+And there you go! Off and running!
+
 
 # Package and Dependency Management
 
 Build tool dependencies are managed by npm, project package management is done by bower.
 
-It's required that you have [node](http://nodejs.org "node.js") and [npm](https://npmjs.org, "npm") installed on your system. Then, all other dependencies are managed (including bower which is managed by npm – wooohooo, how meta that is!).
+It's required that you have [node](http://nodejs.org "node.js") and [npm](https://npmjs.org "npm") installed on your system. Then, all other dependencies are managed (including bower which is managed by npm – wooohooo, how meta that is!).
 
  * Install local dependencies for build tools (as specified in package.json):
    * `npm install` or
@@ -46,6 +57,10 @@ When dependencies are resolved and locally installed, the project file structure
 		img/         # containining js, less, images, templates,
 		js/          # and other files that make up your project.
 		less/        #
+
+## Kick-Off
+
+
 
 
 # Makefile

@@ -55,7 +55,7 @@ CheckstyleReporter.prototype = {
    */
 , startReport: function() {
     this.report = '<?xml version="1.0" encoding="UTF-8"?>'
-    this.report += '<checkstyle version="1.0.0">'
+    this.report += '<checkstyle version="4.0.0">'
   }
 
   /**
