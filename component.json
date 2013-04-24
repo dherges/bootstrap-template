@@ -1,10 +1,11 @@
 {
-  "name": "bootstrap-template",
-  "version": "0.0.1",
-  "main": [""],
-  "dependencies": {
-    "bootstrap": "2.3.1"
-  , "jquery": "1.9.1"
-  , "less": "git://github.com/cloudhead/less.js.git#v1.3.3"
+    "name": "bootstrap-template"
+  , "version": "0.0.1"
+  , "main": [""]
+  , "dependencies": {
+      "bootstrap": "2.3.1"
+    , "jquery": "1.9.1"
+    , "less": "git://github.com/cloudhead/less.js.git#v1.3.3"
+    , "underscore": "git://github.com/documentcloud/underscore.git#1.4.4"
   }
 }
