@@ -1,4 +1,4 @@
-bootstrap-template is distributed under the MIT License.
+bootstrap-template is - officially - distributed under the MIT License.
 
 Copyright (c) 2013 David Herges <david@spektrakel.de>
 
@@ -19,3 +19,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+Heads Up!
+
+The license agreement applies to the custom grunt tasks shipped with this
+project template; see the tasks directory. The source code of those tasks is
+provided "as is".
+
+For the remainder of this template, feel free to add, change, delete, move, or
+copy things as you desire. Whatever you do with it, just do it. Stating some
+notice and reference to this source will be appreciated.
