@@ -32,11 +32,11 @@ module.exports = function(grunt) {
       },
       test: { // sub-task: jshint:test
         src: ['Gruntfile.js', 'test/core/**/*.js'],
-        options: {output: 'build/jshint/test_checkstyle.xml'}
+        options: {output: 'logs/jshint/test_checkstyle.xml'}
       },
       source: { // sub-task: jshint:src
         src: ['src/js/**/*.js'],
-        options: {output: 'build/jshint/src_checkstyle.xml'}
+        options: {output: 'logs/jshint/src_checkstyle.xml'}
       }
     },
     // task: connect
@@ -66,14 +66,14 @@ module.exports = function(grunt) {
         src: ['src/less/myproject.less'],
         options: {
           reporter: 'checkstyle',
-          reportFile: 'build/recess/checkstyle.xml',
-          output: 'build/recess'
+          reportFile: 'logs/recess/checkstyle.xml',
+          output: 'logs/recess'
         }
       },
       log: {
         src: ['src/less/myproject.less', 'src/less/myproject-responsive.less'],
         options: {
-          reportFile: 'build/recess/recess.log'
+          reportFile: 'logs/recess/recess.log'
         }
       }
     }

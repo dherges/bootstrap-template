@@ -10,7 +10,7 @@ Checkout or download, then
 	cd {my-project-directory}
 	npm install
 	bower install
-	make
+	grunt
 
 And there you go! Off and running!
 
@@ -19,20 +19,19 @@ And there you go! Off and running!
 
 Build tool dependencies are managed by npm, project package management is done by bower.
 
-It's required that you have [node](http://nodejs.org "node.js") and [npm](https://npmjs.org "npm") installed on your system. Then, all other dependencies are managed (including bower which is managed by npm – wooohooo, how meta that is!).
+It's required that you have [node](http://nodejs.org "node.js") and [npm](https://npmjs.org "npm") installed on your system. Then, all other dependencies are managed (including bower which is manageable through npm – wooohooo, how meta that is!).
 
  * Install local dependencies for build tools (as specified in package.json):
-   * `npm install` or
-   * `make package-deps`
+   * `npm install`
  * Install local dependencies for packaging (as specified in component.json):
    * `bower install` or
-   * `make component-deps`
- * Build the full template project:
-   * `make`
+   * `node_modules/.bin/bower install`
+ * Let grunt do a demo build:
+   * `grunt`
 
 ### Node Dependencies
 
-Dependencies for build tools (recess, jshint, et al.) are specified in the package.json file. These are managed by npm.
+Dependencies for build tools (grunt, recess, jshint, et al.) are specified in the package.json file. These are managed by npm.
 
 ### Bower Dependencies
 
@@ -61,10 +60,11 @@ When dependencies are resolved and locally installed, the project file structure
 		templates/   #
 
 
+## Grunt my build
 
 
 
-## Makefile
+## DEPRECATED: Makefile
 
 The makefile provides various make targets so that parts of the project can be built invidually. To run a target, just do `make TARGETNAME`. See the makefile for target definitions.
 

@@ -7,8 +7,8 @@ HR    = \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
 
 ### Project Directories
-DIR_BUILD    = build/
-DIR_REPORTS  = ${DIR_BUILD}reports/
+DIR_BUILD    = logs/
+DIR_REPORTS  = logs/
 DIR_SRC      = src/
 DIR_SRC_JS   = ${DIR_SRC}js/
 DIR_SRC_IMG  = ${DIR_SRC}img/

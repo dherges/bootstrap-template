@@ -1,14 +1,23 @@
-# project files
-build/reports
-components
+### Project
 dist
+logs
+
+# Bower
+components
+
+# NPM
 node_modules
 npm-debug.log
 
-# Mac OS and Eclipse
-.DS_Store
+
+### IDEs
+# Eclipse
 .buildpath
 .classpath
 .project
 .settings
-.externalToolBuilders
+.externalToolBuilders/
+
+# Mac OS X
+.DS_Store
+._*
