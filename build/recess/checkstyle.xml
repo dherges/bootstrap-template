@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.0.0">
+<file name="/Users/david/Desktop/bootstrap-template/build/recess/myproject.less">
+<error line="123" column="0" severity="error" message="Id&#x27;s should not be styled     123. #map_canvas" source="recess.noIDs"/>
+<error line="123" column="0" severity="error" message="Underscores should not be used when naming selectors     123. #map_canvas" source="recess.noUnderscores"/>
+<error line="276" column="0" severity="warning" message="Universal selectors should be avoided     276.  [class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="372" column="0" severity="warning" message="Universal selectors should be avoided     372.  .row-fluid [class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="383" column="0" severity="warning" message="Universal selectors should be avoided     383.  .row-fluid [class*=&quot;span&quot;]:first-child" source="recess.noUniversalSelectors"/>
+<error line="386" column="0" severity="warning" message="Universal selectors should be avoided     386.  .row-fluid .controls-row [class*=&quot;span&quot;] + [class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="533" column="0" severity="warning" message="Universal selectors should be avoided     533.  [class*=&quot;span&quot;].hide" source="recess.noUniversalSelectors"/>
+<error line="534" column="0" severity="warning" message="Universal selectors should be avoided     534.  .row-fluid [class*=&quot;span&quot;].hide" source="recess.noUniversalSelectors"/>
+<error line="537" column="0" severity="warning" message="Universal selectors should be avoided     537.  [class*=&quot;span&quot;].pull-right" source="recess.noUniversalSelectors"/>
+<error line="538" column="0" severity="warning" message="Universal selectors should be avoided     538.  .row-fluid [class*=&quot;span&quot;].pull-right" source="recess.noUniversalSelectors"/>
+<error line="593" column="0" severity="warning" message="Element selectors should not be overqualified     593. a.muted:hover" source="recess.noOverqualifying"/>
+<error line="594" column="0" severity="warning" message="Element selectors should not be overqualified     594. a.muted:focus" source="recess.noOverqualifying"/>
+<error line="600" column="0" severity="warning" message="Element selectors should not be overqualified     600. a.text-warning:hover" source="recess.noOverqualifying"/>
+<error line="601" column="0" severity="warning" message="Element selectors should not be overqualified     601. a.text-warning:focus" source="recess.noOverqualifying"/>
+<error line="607" column="0" severity="warning" message="Element selectors should not be overqualified     607. a.text-error:hover" source="recess.noOverqualifying"/>
+<error line="608" column="0" severity="warning" message="Element selectors should not be overqualified     608. a.text-error:focus" source="recess.noOverqualifying"/>
+<error line="614" column="0" severity="warning" message="Element selectors should not be overqualified     614. a.text-info:hover" source="recess.noOverqualifying"/>
+<error line="615" column="0" severity="warning" message="Element selectors should not be overqualified     615. a.text-info:focus" source="recess.noOverqualifying"/>
+<error line="621" column="0" severity="warning" message="Element selectors should not be overqualified     621. a.text-success:hover" source="recess.noOverqualifying"/>
+<error line="622" column="0" severity="warning" message="Element selectors should not be overqualified     622. a.text-success:focus" source="recess.noOverqualifying"/>
+<error line="711" column="0" severity="warning" message="Element selectors should not be overqualified     711. ul.unstyled" source="recess.noOverqualifying"/>
+<error line="712" column="0" severity="warning" message="Element selectors should not be overqualified     712. ol.unstyled" source="recess.noOverqualifying"/>
+<error line="716" column="0" severity="warning" message="Element selectors should not be overqualified     716. ul.inline" source="recess.noOverqualifying"/>
+<error line="717" column="0" severity="warning" message="Element selectors should not be overqualified     717. ol.inline" source="recess.noOverqualifying"/>
+<error line="721" column="0" severity="warning" message="Element selectors should not be overqualified     721. ul.inline &gt; li" source="recess.noOverqualifying"/>
+<error line="722" column="0" severity="warning" message="Element selectors should not be overqualified     722. ol.inline &gt; li" source="recess.noOverqualifying"/>
+<error line="779" column="0" severity="warning" message="Element selectors should not be overqualified     779. abbr.initialism" source="recess.noOverqualifying"/>
+<error line="802" column="0" severity="warning" message="Element selectors should not be overqualified     802. blockquote.pull-right" source="recess.noOverqualifying"/>
+<error line="809" column="0" severity="warning" message="Element selectors should not be overqualified     809. blockquote.pull-right p" source="recess.noOverqualifying"/>
+<error line="810" column="0" severity="warning" message="Element selectors should not be overqualified     810. blockquote.pull-right small" source="recess.noOverqualifying"/>
+<error line="813" column="0" severity="warning" message="Element selectors should not be overqualified     813. blockquote.pull-right small:before" source="recess.noOverqualifying"/>
+<error line="816" column="0" severity="warning" message="Element selectors should not be overqualified     816. blockquote.pull-right small:after" source="recess.noOverqualifying"/>
+<error line="865" column="0" severity="warning" message="Element selectors should not be overqualified     865. pre.prettyprint" source="recess.noOverqualifying"/>
+<error line="1101" column="0" severity="warning" message="Element selectors should not be overqualified    1101. .radio.inline" source="recess.noOverqualifying"/>
+<error line="1102" column="0" severity="warning" message="Element selectors should not be overqualified    1102. .checkbox.inline" source="recess.noOverqualifying"/>
+<error line="1108" column="0" severity="warning" message="Element selectors should not be overqualified    1108. .radio.inline + .radio.inline" source="recess.noOverqualifying"/>
+<error line="1109" column="0" severity="warning" message="Element selectors should not be overqualified    1109. .checkbox.inline + .checkbox.inline" source="recess.noOverqualifying"/>
+<error line="1130" column="0" severity="warning" message="Universal selectors should be avoided    1130.  input[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1131" column="0" severity="warning" message="Universal selectors should be avoided    1131.  select[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1132" column="0" severity="warning" message="Universal selectors should be avoided    1132.  textarea[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1133" column="0" severity="warning" message="Universal selectors should be avoided    1133.  .uneditable-input[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1134" column="0" severity="warning" message="Universal selectors should be avoided    1134.  .row-fluid input[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1135" column="0" severity="warning" message="Universal selectors should be avoided    1135.  .row-fluid select[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1136" column="0" severity="warning" message="Universal selectors should be avoided    1136.  .row-fluid textarea[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1137" column="0" severity="warning" message="Universal selectors should be avoided    1137.  .row-fluid .uneditable-input[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1141" column="0" severity="warning" message="Universal selectors should be avoided    1141.  .input-append input[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1142" column="0" severity="warning" message="Universal selectors should be avoided    1142.  .input-append .uneditable-input[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1143" column="0" severity="warning" message="Universal selectors should be avoided    1143.  .input-prepend input[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1144" column="0" severity="warning" message="Universal selectors should be avoided    1144.  .input-prepend .uneditable-input[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1145" column="0" severity="warning" message="Universal selectors should be avoided    1145.  .row-fluid input[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1146" column="0" severity="warning" message="Universal selectors should be avoided    1146.  .row-fluid select[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1147" column="0" severity="warning" message="Universal selectors should be avoided    1147.  .row-fluid textarea[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1148" column="0" severity="warning" message="Universal selectors should be avoided    1148.  .row-fluid .uneditable-input[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1149" column="0" severity="warning" message="Universal selectors should be avoided    1149.  .row-fluid .input-prepend [class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1150" column="0" severity="warning" message="Universal selectors should be avoided    1150.  .row-fluid .input-append [class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1158" column="0" severity="warning" message="Universal selectors should be avoided    1158.  .controls-row [class*=&quot;span&quot;] + [class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1161" column="0" severity="warning" message="Element selectors should not be overqualified    1161. input.span12" source="recess.noOverqualifying"/>
+<error line="1162" column="0" severity="warning" message="Element selectors should not be overqualified    1162. textarea.span12" source="recess.noOverqualifying"/>
+<error line="1163" column="0" severity="warning" message="Element selectors should not be overqualified    1163. .uneditable-input.span12" source="recess.noOverqualifying"/>
+<error line="1166" column="0" severity="warning" message="Element selectors should not be overqualified    1166. input.span11" source="recess.noOverqualifying"/>
+<error line="1167" column="0" severity="warning" message="Element selectors should not be overqualified    1167. textarea.span11" source="recess.noOverqualifying"/>
+<error line="1168" column="0" severity="warning" message="Element selectors should not be overqualified    1168. .uneditable-input.span11" source="recess.noOverqualifying"/>
+<error line="1171" column="0" severity="warning" message="Element selectors should not be overqualified    1171. input.span10" source="recess.noOverqualifying"/>
+<error line="1172" column="0" severity="warning" message="Element selectors should not be overqualified    1172. textarea.span10" source="recess.noOverqualifying"/>
+<error line="1173" column="0" severity="warning" message="Element selectors should not be overqualified    1173. .uneditable-input.span10" source="recess.noOverqualifying"/>
+<error line="1176" column="0" severity="warning" message="Element selectors should not be overqualified    1176. input.span9" source="recess.noOverqualifying"/>
+<error line="1177" column="0" severity="warning" message="Element selectors should not be overqualified    1177. textarea.span9" source="recess.noOverqualifying"/>
+<error line="1178" column="0" severity="warning" message="Element selectors should not be overqualified    1178. .uneditable-input.span9" source="recess.noOverqualifying"/>
+<error line="1181" column="0" severity="warning" message="Element selectors should not be overqualified    1181. input.span8" source="recess.noOverqualifying"/>
+<error line="1182" column="0" severity="warning" message="Element selectors should not be overqualified    1182. textarea.span8" source="recess.noOverqualifying"/>
+<error line="1183" column="0" severity="warning" message="Element selectors should not be overqualified    1183. .uneditable-input.span8" source="recess.noOverqualifying"/>
+<error line="1186" column="0" severity="warning" message="Element selectors should not be overqualified    1186. input.span7" source="recess.noOverqualifying"/>
+<error line="1187" column="0" severity="warning" message="Element selectors should not be overqualified    1187. textarea.span7" source="recess.noOverqualifying"/>
+<error line="1188" column="0" severity="warning" message="Element selectors should not be overqualified    1188. .uneditable-input.span7" source="recess.noOverqualifying"/>
+<error line="1191" column="0" severity="warning" message="Element selectors should not be overqualified    1191. input.span6" source="recess.noOverqualifying"/>
+<error line="1192" column="0" severity="warning" message="Element selectors should not be overqualified    1192. textarea.span6" source="recess.noOverqualifying"/>
+<error line="1193" column="0" severity="warning" message="Element selectors should not be overqualified    1193. .uneditable-input.span6" source="recess.noOverqualifying"/>
+<error line="1196" column="0" severity="warning" message="Element selectors should not be overqualified    1196. input.span5" source="recess.noOverqualifying"/>
+<error line="1197" column="0" severity="warning" message="Element selectors should not be overqualified    1197. textarea.span5" source="recess.noOverqualifying"/>
+<error line="1198" column="0" severity="warning" message="Element selectors should not be overqualified    1198. .uneditable-input.span5" source="recess.noOverqualifying"/>
+<error line="1201" column="0" severity="warning" message="Element selectors should not be overqualified    1201. input.span4" source="recess.noOverqualifying"/>
+<error line="1202" column="0" severity="warning" message="Element selectors should not be overqualified    1202. textarea.span4" source="recess.noOverqualifying"/>
+<error line="1203" column="0" severity="warning" message="Element selectors should not be overqualified    1203. .uneditable-input.span4" source="recess.noOverqualifying"/>
+<error line="1206" column="0" severity="warning" message="Element selectors should not be overqualified    1206. input.span3" source="recess.noOverqualifying"/>
+<error line="1207" column="0" severity="warning" message="Element selectors should not be overqualified    1207. textarea.span3" source="recess.noOverqualifying"/>
+<error line="1208" column="0" severity="warning" message="Element selectors should not be overqualified    1208. .uneditable-input.span3" source="recess.noOverqualifying"/>
+<error line="1211" column="0" severity="warning" message="Element selectors should not be overqualified    1211. input.span2" source="recess.noOverqualifying"/>
+<error line="1212" column="0" severity="warning" message="Element selectors should not be overqualified    1212. textarea.span2" source="recess.noOverqualifying"/>
+<error line="1213" column="0" severity="warning" message="Element selectors should not be overqualified    1213. .uneditable-input.span2" source="recess.noOverqualifying"/>
+<error line="1216" column="0" severity="warning" message="Element selectors should not be overqualified    1216. input.span1" source="recess.noOverqualifying"/>
+<error line="1217" column="0" severity="warning" message="Element selectors should not be overqualified    1217. textarea.span1" source="recess.noOverqualifying"/>
+<error line="1218" column="0" severity="warning" message="Element selectors should not be overqualified    1218. .uneditable-input.span1" source="recess.noOverqualifying"/>
+<error line="1233" column="0" severity="warning" message="Universal selectors should be avoided    1233.  .controls-row [class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1234" column="0" severity="warning" message="Universal selectors should be avoided    1234.  .row-fluid .controls-row [class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1237" column="0" severity="warning" message="Universal selectors should be avoided    1237.  .controls-row .checkbox[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1238" column="0" severity="warning" message="Universal selectors should be avoided    1238.  .controls-row .radio[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1256" column="0" severity="warning" message="Element selectors should not be overqualified    1256. .control-group.warning .control-label" source="recess.noOverqualifying"/>
+<error line="1257" column="0" severity="warning" message="Element selectors should not be overqualified    1257. .control-group.warning .help-block" source="recess.noOverqualifying"/>
+<error line="1258" column="0" severity="warning" message="Element selectors should not be overqualified    1258. .control-group.warning .help-inline" source="recess.noOverqualifying"/>
+<error line="1261" column="0" severity="warning" message="Element selectors should not be overqualified    1261. .control-group.warning .checkbox" source="recess.noOverqualifying"/>
+<error line="1262" column="0" severity="warning" message="Element selectors should not be overqualified    1262. .control-group.warning .radio" source="recess.noOverqualifying"/>
+<error line="1263" column="0" severity="warning" message="Element selectors should not be overqualified    1263. .control-group.warning input" source="recess.noOverqualifying"/>
+<error line="1264" column="0" severity="warning" message="Element selectors should not be overqualified    1264. .control-group.warning select" source="recess.noOverqualifying"/>
+<error line="1265" column="0" severity="warning" message="Element selectors should not be overqualified    1265. .control-group.warning textarea" source="recess.noOverqualifying"/>
+<error line="1268" column="0" severity="warning" message="Element selectors should not be overqualified    1268. .control-group.warning input" source="recess.noOverqualifying"/>
+<error line="1269" column="0" severity="warning" message="Element selectors should not be overqualified    1269. .control-group.warning select" source="recess.noOverqualifying"/>
+<error line="1270" column="0" severity="warning" message="Element selectors should not be overqualified    1270. .control-group.warning textarea" source="recess.noOverqualifying"/>
+<error line="1276" column="0" severity="warning" message="Element selectors should not be overqualified    1276. .control-group.warning input:focus" source="recess.noOverqualifying"/>
+<error line="1277" column="0" severity="warning" message="Element selectors should not be overqualified    1277. .control-group.warning select:focus" source="recess.noOverqualifying"/>
+<error line="1278" column="0" severity="warning" message="Element selectors should not be overqualified    1278. .control-group.warning textarea:focus" source="recess.noOverqualifying"/>
+<error line="1284" column="0" severity="warning" message="Element selectors should not be overqualified    1284. .control-group.warning .input-prepend .add-on" source="recess.noOverqualifying"/>
+<error line="1285" column="0" severity="warning" message="Element selectors should not be overqualified    1285. .control-group.warning .input-append .add-on" source="recess.noOverqualifying"/>
+<error line="1290" column="0" severity="warning" message="Element selectors should not be overqualified    1290. .control-group.error .control-label" source="recess.noOverqualifying"/>
+<error line="1291" column="0" severity="warning" message="Element selectors should not be overqualified    1291. .control-group.error .help-block" source="recess.noOverqualifying"/>
+<error line="1292" column="0" severity="warning" message="Element selectors should not be overqualified    1292. .control-group.error .help-inline" source="recess.noOverqualifying"/>
+<error line="1295" column="0" severity="warning" message="Element selectors should not be overqualified    1295. .control-group.error .checkbox" source="recess.noOverqualifying"/>
+<error line="1296" column="0" severity="warning" message="Element selectors should not be overqualified    1296. .control-group.error .radio" source="recess.noOverqualifying"/>
+<error line="1297" column="0" severity="warning" message="Element selectors should not be overqualified    1297. .control-group.error input" source="recess.noOverqualifying"/>
+<error line="1298" column="0" severity="warning" message="Element selectors should not be overqualified    1298. .control-group.error select" source="recess.noOverqualifying"/>
+<error line="1299" column="0" severity="warning" message="Element selectors should not be overqualified    1299. .control-group.error textarea" source="recess.noOverqualifying"/>
+<error line="1302" column="0" severity="warning" message="Element selectors should not be overqualified    1302. .control-group.error input" source="recess.noOverqualifying"/>
+<error line="1303" column="0" severity="warning" message="Element selectors should not be overqualified    1303. .control-group.error select" source="recess.noOverqualifying"/>
+<error line="1304" column="0" severity="warning" message="Element selectors should not be overqualified    1304. .control-group.error textarea" source="recess.noOverqualifying"/>
+<error line="1310" column="0" severity="warning" message="Element selectors should not be overqualified    1310. .control-group.error input:focus" source="recess.noOverqualifying"/>
+<error line="1311" column="0" severity="warning" message="Element selectors should not be overqualified    1311. .control-group.error select:focus" source="recess.noOverqualifying"/>
+<error line="1312" column="0" severity="warning" message="Element selectors should not be overqualified    1312. .control-group.error textarea:focus" source="recess.noOverqualifying"/>
+<error line="1318" column="0" severity="warning" message="Element selectors should not be overqualified    1318. .control-group.error .input-prepend .add-on" source="recess.noOverqualifying"/>
+<error line="1319" column="0" severity="warning" message="Element selectors should not be overqualified    1319. .control-group.error .input-append .add-on" source="recess.noOverqualifying"/>
+<error line="1324" column="0" severity="warning" message="Element selectors should not be overqualified    1324. .control-group.success .control-label" source="recess.noOverqualifying"/>
+<error line="1325" column="0" severity="warning" message="Element selectors should not be overqualified    1325. .control-group.success .help-block" source="recess.noOverqualifying"/>
+<error line="1326" column="0" severity="warning" message="Element selectors should not be overqualified    1326. .control-group.success .help-inline" source="recess.noOverqualifying"/>
+<error line="1329" column="0" severity="warning" message="Element selectors should not be overqualified    1329. .control-group.success .checkbox" source="recess.noOverqualifying"/>
+<error line="1330" column="0" severity="warning" message="Element selectors should not be overqualified    1330. .control-group.success .radio" source="recess.noOverqualifying"/>
+<error line="1331" column="0" severity="warning" message="Element selectors should not be overqualified    1331. .control-group.success input" source="recess.noOverqualifying"/>
+<error line="1332" column="0" severity="warning" message="Element selectors should not be overqualified    1332. .control-group.success select" source="recess.noOverqualifying"/>
+<error line="1333" column="0" severity="warning" message="Element selectors should not be overqualified    1333. .control-group.success textarea" source="recess.noOverqualifying"/>
+<error line="1336" column="0" severity="warning" message="Element selectors should not be overqualified    1336. .control-group.success input" source="recess.noOverqualifying"/>
+<error line="1337" column="0" severity="warning" message="Element selectors should not be overqualified    1337. .control-group.success select" source="recess.noOverqualifying"/>
+<error line="1338" column="0" severity="warning" message="Element selectors should not be overqualified    1338. .control-group.success textarea" source="recess.noOverqualifying"/>
+<error line="1344" column="0" severity="warning" message="Element selectors should not be overqualified    1344. .control-group.success input:focus" source="recess.noOverqualifying"/>
+<error line="1345" column="0" severity="warning" message="Element selectors should not be overqualified    1345. .control-group.success select:focus" source="recess.noOverqualifying"/>
+<error line="1346" column="0" severity="warning" message="Element selectors should not be overqualified    1346. .control-group.success textarea:focus" source="recess.noOverqualifying"/>
+<error line="1352" column="0" severity="warning" message="Element selectors should not be overqualified    1352. .control-group.success .input-prepend .add-on" source="recess.noOverqualifying"/>
+<error line="1353" column="0" severity="warning" message="Element selectors should not be overqualified    1353. .control-group.success .input-append .add-on" source="recess.noOverqualifying"/>
+<error line="1358" column="0" severity="warning" message="Element selectors should not be overqualified    1358. .control-group.info .control-label" source="recess.noOverqualifying"/>
+<error line="1359" column="0" severity="warning" message="Element selectors should not be overqualified    1359. .control-group.info .help-block" source="recess.noOverqualifying"/>
+<error line="1360" column="0" severity="warning" message="Element selectors should not be overqualified    1360. .control-group.info .help-inline" source="recess.noOverqualifying"/>
+<error line="1363" column="0" severity="warning" message="Element selectors should not be overqualified    1363. .control-group.info .checkbox" source="recess.noOverqualifying"/>
+<error line="1364" column="0" severity="warning" message="Element selectors should not be overqualified    1364. .control-group.info .radio" source="recess.noOverqualifying"/>
+<error line="1365" column="0" severity="warning" message="Element selectors should not be overqualified    1365. .control-group.info input" source="recess.noOverqualifying"/>
+<error line="1366" column="0" severity="warning" message="Element selectors should not be overqualified    1366. .control-group.info select" source="recess.noOverqualifying"/>
+<error line="1367" column="0" severity="warning" message="Element selectors should not be overqualified    1367. .control-group.info textarea" source="recess.noOverqualifying"/>
+<error line="1370" column="0" severity="warning" message="Element selectors should not be overqualified    1370. .control-group.info input" source="recess.noOverqualifying"/>
+<error line="1371" column="0" severity="warning" message="Element selectors should not be overqualified    1371. .control-group.info select" source="recess.noOverqualifying"/>
+<error line="1372" column="0" severity="warning" message="Element selectors should not be overqualified    1372. .control-group.info textarea" source="recess.noOverqualifying"/>
+<error line="1378" column="0" severity="warning" message="Element selectors should not be overqualified    1378. .control-group.info input:focus" source="recess.noOverqualifying"/>
+<error line="1379" column="0" severity="warning" message="Element selectors should not be overqualified    1379. .control-group.info select:focus" source="recess.noOverqualifying"/>
+<error line="1380" column="0" severity="warning" message="Element selectors should not be overqualified    1380. .control-group.info textarea:focus" source="recess.noOverqualifying"/>
+<error line="1386" column="0" severity="warning" message="Element selectors should not be overqualified    1386. .control-group.info .input-prepend .add-on" source="recess.noOverqualifying"/>
+<error line="1387" column="0" severity="warning" message="Element selectors should not be overqualified    1387. .control-group.info .input-append .add-on" source="recess.noOverqualifying"/>
+<error line="1549" column="0" severity="warning" message="Element selectors should not be overqualified    1549. .input-prepend.input-append input" source="recess.noOverqualifying"/>
+<error line="1550" column="0" severity="warning" message="Element selectors should not be overqualified    1550. .input-prepend.input-append select" source="recess.noOverqualifying"/>
+<error line="1551" column="0" severity="warning" message="Element selectors should not be overqualified    1551. .input-prepend.input-append .uneditable-input" source="recess.noOverqualifying"/>
+<error line="1556" column="0" severity="warning" message="Element selectors should not be overqualified    1556. .input-prepend.input-append input + .btn-group .btn" source="recess.noOverqualifying"/>
+<error line="1557" column="0" severity="warning" message="Element selectors should not be overqualified    1557. .input-prepend.input-append select + .btn-group .btn" source="recess.noOverqualifying"/>
+<error line="1558" column="0" severity="warning" message="Element selectors should not be overqualified    1558. .input-prepend.input-append .uneditable-input + .btn-group .btn" source="recess.noOverqualifying"/>
+<error line="1563" column="0" severity="warning" message="Element selectors should not be overqualified    1563. .input-prepend.input-append .add-on:first-child" source="recess.noOverqualifying"/>
+<error line="1564" column="0" severity="warning" message="Element selectors should not be overqualified    1564. .input-prepend.input-append .btn:first-child" source="recess.noOverqualifying"/>
+<error line="1570" column="0" severity="warning" message="Element selectors should not be overqualified    1570. .input-prepend.input-append .add-on:last-child" source="recess.noOverqualifying"/>
+<error line="1571" column="0" severity="warning" message="Element selectors should not be overqualified    1571. .input-prepend.input-append .btn:last-child" source="recess.noOverqualifying"/>
+<error line="1577" column="0" severity="warning" message="Element selectors should not be overqualified    1577. .input-prepend.input-append .btn-group:first-child" source="recess.noOverqualifying"/>
+<error line="1580" column="0" severity="warning" message="Element selectors should not be overqualified    1580. input.search-query" source="recess.noOverqualifying"/>
+<error line="1862" column="0" severity="warning" message="Universal selectors should be avoided    1862.  table td[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1863" column="0" severity="warning" message="Universal selectors should be avoided    1863.  table th[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1864" column="0" severity="warning" message="Universal selectors should be avoided    1864.  .row-fluid table td[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1865" column="0" severity="warning" message="Universal selectors should be avoided    1865.  .row-fluid table th[class*=&quot;span&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1870" column="0" severity="warning" message="Element selectors should not be overqualified    1870. .table td.span1" source="recess.noOverqualifying"/>
+<error line="1871" column="0" severity="warning" message="Element selectors should not be overqualified    1871. .table th.span1" source="recess.noOverqualifying"/>
+<error line="1876" column="0" severity="warning" message="Element selectors should not be overqualified    1876. .table td.span2" source="recess.noOverqualifying"/>
+<error line="1877" column="0" severity="warning" message="Element selectors should not be overqualified    1877. .table th.span2" source="recess.noOverqualifying"/>
+<error line="1882" column="0" severity="warning" message="Element selectors should not be overqualified    1882. .table td.span3" source="recess.noOverqualifying"/>
+<error line="1883" column="0" severity="warning" message="Element selectors should not be overqualified    1883. .table th.span3" source="recess.noOverqualifying"/>
+<error line="1888" column="0" severity="warning" message="Element selectors should not be overqualified    1888. .table td.span4" source="recess.noOverqualifying"/>
+<error line="1889" column="0" severity="warning" message="Element selectors should not be overqualified    1889. .table th.span4" source="recess.noOverqualifying"/>
+<error line="1894" column="0" severity="warning" message="Element selectors should not be overqualified    1894. .table td.span5" source="recess.noOverqualifying"/>
+<error line="1895" column="0" severity="warning" message="Element selectors should not be overqualified    1895. .table th.span5" source="recess.noOverqualifying"/>
+<error line="1900" column="0" severity="warning" message="Element selectors should not be overqualified    1900. .table td.span6" source="recess.noOverqualifying"/>
+<error line="1901" column="0" severity="warning" message="Element selectors should not be overqualified    1901. .table th.span6" source="recess.noOverqualifying"/>
+<error line="1906" column="0" severity="warning" message="Element selectors should not be overqualified    1906. .table td.span7" source="recess.noOverqualifying"/>
+<error line="1907" column="0" severity="warning" message="Element selectors should not be overqualified    1907. .table th.span7" source="recess.noOverqualifying"/>
+<error line="1912" column="0" severity="warning" message="Element selectors should not be overqualified    1912. .table td.span8" source="recess.noOverqualifying"/>
+<error line="1913" column="0" severity="warning" message="Element selectors should not be overqualified    1913. .table th.span8" source="recess.noOverqualifying"/>
+<error line="1918" column="0" severity="warning" message="Element selectors should not be overqualified    1918. .table td.span9" source="recess.noOverqualifying"/>
+<error line="1919" column="0" severity="warning" message="Element selectors should not be overqualified    1919. .table th.span9" source="recess.noOverqualifying"/>
+<error line="1924" column="0" severity="warning" message="Element selectors should not be overqualified    1924. .table td.span10" source="recess.noOverqualifying"/>
+<error line="1925" column="0" severity="warning" message="Element selectors should not be overqualified    1925. .table th.span10" source="recess.noOverqualifying"/>
+<error line="1930" column="0" severity="warning" message="Element selectors should not be overqualified    1930. .table td.span11" source="recess.noOverqualifying"/>
+<error line="1931" column="0" severity="warning" message="Element selectors should not be overqualified    1931. .table th.span11" source="recess.noOverqualifying"/>
+<error line="1936" column="0" severity="warning" message="Element selectors should not be overqualified    1936. .table td.span12" source="recess.noOverqualifying"/>
+<error line="1937" column="0" severity="warning" message="Element selectors should not be overqualified    1937. .table th.span12" source="recess.noOverqualifying"/>
+<error line="1942" column="0" severity="warning" message="Element selectors should not be overqualified    1942. .table tbody tr.success &gt; td" source="recess.noOverqualifying"/>
+<error line="1945" column="0" severity="warning" message="Element selectors should not be overqualified    1945. .table tbody tr.error &gt; td" source="recess.noOverqualifying"/>
+<error line="1948" column="0" severity="warning" message="Element selectors should not be overqualified    1948. .table tbody tr.warning &gt; td" source="recess.noOverqualifying"/>
+<error line="1951" column="0" severity="warning" message="Element selectors should not be overqualified    1951. .table tbody tr.info &gt; td" source="recess.noOverqualifying"/>
+<error line="1954" column="0" severity="warning" message="Element selectors should not be overqualified    1954. .table-hover tbody tr.success:hover &gt; td" source="recess.noOverqualifying"/>
+<error line="1957" column="0" severity="warning" message="Element selectors should not be overqualified    1957. .table-hover tbody tr.error:hover &gt; td" source="recess.noOverqualifying"/>
+<error line="1960" column="0" severity="warning" message="Element selectors should not be overqualified    1960. .table-hover tbody tr.warning:hover &gt; td" source="recess.noOverqualifying"/>
+<error line="1963" column="0" severity="warning" message="Element selectors should not be overqualified    1963. .table-hover tbody tr.info:hover &gt; td" source="recess.noOverqualifying"/>
+<error line="1967" column="0" severity="warning" message="Universal selectors should be avoided    1967.  [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1982" column="0" severity="warning" message="Universal selectors should be avoided    1982.  .nav-pills &gt; .active &gt; a &gt; [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1984" column="0" severity="warning" message="Universal selectors should be avoided    1984.  .nav-list &gt; .active &gt; a &gt; [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1986" column="0" severity="warning" message="Universal selectors should be avoided    1986.  .navbar-inverse .nav &gt; .active &gt; a &gt; [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1989" column="0" severity="warning" message="Universal selectors should be avoided    1989.  .dropdown-menu &gt; li &gt; a:hover &gt; [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1990" column="0" severity="warning" message="Universal selectors should be avoided    1990.  .dropdown-menu &gt; li &gt; a:focus &gt; [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1992" column="0" severity="warning" message="Universal selectors should be avoided    1992.  .dropdown-menu &gt; .active &gt; a &gt; [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1995" column="0" severity="warning" message="Universal selectors should be avoided    1995.  .dropdown-submenu:hover &gt; a &gt; [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="1996" column="0" severity="warning" message="Universal selectors should be avoided    1996.  .dropdown-submenu:focus &gt; a &gt; [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="2473" column="0" severity="warning" message="Element selectors should not be overqualified    2473. .dropdown-menu.pull-right" source="recess.noOverqualifying"/>
+<error line="2600" column="0" severity="warning" message="Element selectors should not be overqualified    2600. .dropdown-submenu.pull-left" source="recess.noOverqualifying"/>
+<error line="2603" column="0" severity="warning" message="Element selectors should not be overqualified    2603. .dropdown-submenu.pull-left &gt; .dropdown-menu" source="recess.noOverqualifying"/>
+<error line="2657" column="0" severity="warning" message="Element selectors should not be overqualified    2657. .fade.in" source="recess.noOverqualifying"/>
+<error line="2669" column="0" severity="warning" message="Element selectors should not be overqualified    2669. .collapse.in" source="recess.noOverqualifying"/>
+<error line="2690" column="0" severity="warning" message="Element selectors should not be overqualified    2690. button.close" source="recess.noOverqualifying"/>
+<error line="2740" column="0" severity="warning" message="Element selectors should not be overqualified    2740. .btn.active" source="recess.noOverqualifying"/>
+<error line="2741" column="0" severity="warning" message="Element selectors should not be overqualified    2741. .btn.disabled" source="recess.noOverqualifying"/>
+<error line="2748" column="0" severity="warning" message="Element selectors should not be overqualified    2748. .btn.active" source="recess.noOverqualifying"/>
+<error line="2769" column="0" severity="warning" message="Element selectors should not be overqualified    2769. .btn.active" source="recess.noOverqualifying"/>
+<error line="2777" column="0" severity="warning" message="Element selectors should not be overqualified    2777. .btn.disabled" source="recess.noOverqualifying"/>
+<error line="2795" column="0" severity="warning" message="Universal selectors should be avoided    2795.  .btn-large [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="2806" column="0" severity="warning" message="Universal selectors should be avoided    2806.  .btn-small [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="2810" column="0" severity="warning" message="Universal selectors should be avoided    2810.  .btn-mini [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="2837" column="0" severity="warning" message="Element selectors should not be overqualified    2837. .btn-primary.active" source="recess.noOverqualifying"/>
+<error line="2838" column="0" severity="warning" message="Element selectors should not be overqualified    2838. .btn-warning.active" source="recess.noOverqualifying"/>
+<error line="2839" column="0" severity="warning" message="Element selectors should not be overqualified    2839. .btn-danger.active" source="recess.noOverqualifying"/>
+<error line="2840" column="0" severity="warning" message="Element selectors should not be overqualified    2840. .btn-success.active" source="recess.noOverqualifying"/>
+<error line="2841" column="0" severity="warning" message="Element selectors should not be overqualified    2841. .btn-info.active" source="recess.noOverqualifying"/>
+<error line="2842" column="0" severity="warning" message="Element selectors should not be overqualified    2842. .btn-inverse.active" source="recess.noOverqualifying"/>
+<error line="2866" column="0" severity="warning" message="Element selectors should not be overqualified    2866. .btn-primary.active" source="recess.noOverqualifying"/>
+<error line="2867" column="0" severity="warning" message="Element selectors should not be overqualified    2867. .btn-primary.disabled" source="recess.noOverqualifying"/>
+<error line="2874" column="0" severity="warning" message="Element selectors should not be overqualified    2874. .btn-primary.active" source="recess.noOverqualifying"/>
+<error line="2898" column="0" severity="warning" message="Element selectors should not be overqualified    2898. .btn-warning.active" source="recess.noOverqualifying"/>
+<error line="2899" column="0" severity="warning" message="Element selectors should not be overqualified    2899. .btn-warning.disabled" source="recess.noOverqualifying"/>
+<error line="2906" column="0" severity="warning" message="Element selectors should not be overqualified    2906. .btn-warning.active" source="recess.noOverqualifying"/>
+<error line="2930" column="0" severity="warning" message="Element selectors should not be overqualified    2930. .btn-danger.active" source="recess.noOverqualifying"/>
+<error line="2931" column="0" severity="warning" message="Element selectors should not be overqualified    2931. .btn-danger.disabled" source="recess.noOverqualifying"/>
+<error line="2938" column="0" severity="warning" message="Element selectors should not be overqualified    2938. .btn-danger.active" source="recess.noOverqualifying"/>
+<error line="2962" column="0" severity="warning" message="Element selectors should not be overqualified    2962. .btn-success.active" source="recess.noOverqualifying"/>
+<error line="2963" column="0" severity="warning" message="Element selectors should not be overqualified    2963. .btn-success.disabled" source="recess.noOverqualifying"/>
+<error line="2970" column="0" severity="warning" message="Element selectors should not be overqualified    2970. .btn-success.active" source="recess.noOverqualifying"/>
+<error line="2994" column="0" severity="warning" message="Element selectors should not be overqualified    2994. .btn-info.active" source="recess.noOverqualifying"/>
+<error line="2995" column="0" severity="warning" message="Element selectors should not be overqualified    2995. .btn-info.disabled" source="recess.noOverqualifying"/>
+<error line="3002" column="0" severity="warning" message="Element selectors should not be overqualified    3002. .btn-info.active" source="recess.noOverqualifying"/>
+<error line="3026" column="0" severity="warning" message="Element selectors should not be overqualified    3026. .btn-inverse.active" source="recess.noOverqualifying"/>
+<error line="3027" column="0" severity="warning" message="Element selectors should not be overqualified    3027. .btn-inverse.disabled" source="recess.noOverqualifying"/>
+<error line="3034" column="0" severity="warning" message="Element selectors should not be overqualified    3034. .btn-inverse.active" source="recess.noOverqualifying"/>
+<error line="3037" column="0" severity="warning" message="Element selectors should not be overqualified    3037. button.btn" source="recess.noOverqualifying"/>
+<error line="3042" column="0" severity="warning" message="Element selectors should not be overqualified    3042. button.btn::-moz-focus-inner" source="recess.noOverqualifying"/>
+<error line="3047" column="0" severity="warning" message="Element selectors should not be overqualified    3047. button.btn.btn-large" source="recess.noOverqualifying"/>
+<error line="3048" column="0" severity="warning" message="Element selectors should not be overqualified    3048. input[type=&quot;submit&quot;].btn.btn-large" source="recess.noOverqualifying"/>
+<error line="3052" column="0" severity="warning" message="Element selectors should not be overqualified    3052. button.btn.btn-small" source="recess.noOverqualifying"/>
+<error line="3053" column="0" severity="warning" message="Element selectors should not be overqualified    3053. input[type=&quot;submit&quot;].btn.btn-small" source="recess.noOverqualifying"/>
+<error line="3057" column="0" severity="warning" message="Element selectors should not be overqualified    3057. button.btn.btn-mini" source="recess.noOverqualifying"/>
+<error line="3058" column="0" severity="warning" message="Element selectors should not be overqualified    3058. input[type=&quot;submit&quot;].btn.btn-mini" source="recess.noOverqualifying"/>
+<error line="3159" column="0" severity="warning" message="Element selectors should not be overqualified    3159. .btn-group &gt; .btn.large:first-child" source="recess.noOverqualifying"/>
+<error line="3168" column="0" severity="warning" message="Element selectors should not be overqualified    3168. .btn-group &gt; .btn.large:last-child" source="recess.noOverqualifying"/>
+<error line="3169" column="0" severity="warning" message="Element selectors should not be overqualified    3169. .btn-group &gt; .large.dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="3180" column="0" severity="warning" message="Element selectors should not be overqualified    3180. .btn-group &gt; .btn.active" source="recess.noOverqualifying"/>
+<error line="3184" column="0" severity="warning" message="Element selectors should not be overqualified    3184. .btn-group.open .dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="3212" column="0" severity="warning" message="Element selectors should not be overqualified    3212. .btn-group.open .dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="3218" column="0" severity="warning" message="Element selectors should not be overqualified    3218. .btn-group.open .btn.dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="3221" column="0" severity="warning" message="Element selectors should not be overqualified    3221. .btn-group.open .btn-primary.dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="3224" column="0" severity="warning" message="Element selectors should not be overqualified    3224. .btn-group.open .btn-warning.dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="3227" column="0" severity="warning" message="Element selectors should not be overqualified    3227. .btn-group.open .btn-danger.dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="3230" column="0" severity="warning" message="Element selectors should not be overqualified    3230. .btn-group.open .btn-success.dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="3233" column="0" severity="warning" message="Element selectors should not be overqualified    3233. .btn-group.open .btn-info.dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="3236" column="0" severity="warning" message="Element selectors should not be overqualified    3236. .btn-group.open .btn-inverse.dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="3420" column="0" severity="warning" message="Universal selectors should be avoided    3420.  .nav-list [class*=&quot; icon-&quot;]" source="recess.noUniversalSelectors"/>
+<error line="3508" column="0" severity="warning" message="Element selectors should not be overqualified    3508. .nav-tabs.nav-stacked" source="recess.noOverqualifying"/>
+<error line="3511" column="0" severity="warning" message="Element selectors should not be overqualified    3511. .nav-tabs.nav-stacked &gt; li &gt; a" source="recess.noOverqualifying"/>
+<error line="3517" column="0" severity="warning" message="Element selectors should not be overqualified    3517. .nav-tabs.nav-stacked &gt; li:first-child &gt; a" source="recess.noOverqualifying"/>
+<error line="3525" column="0" severity="warning" message="Element selectors should not be overqualified    3525. .nav-tabs.nav-stacked &gt; li:last-child &gt; a" source="recess.noOverqualifying"/>
+<error line="3533" column="0" severity="warning" message="Element selectors should not be overqualified    3533. .nav-tabs.nav-stacked &gt; li &gt; a:hover" source="recess.noOverqualifying"/>
+<error line="3534" column="0" severity="warning" message="Element selectors should not be overqualified    3534. .nav-tabs.nav-stacked &gt; li &gt; a:focus" source="recess.noOverqualifying"/>
+<error line="3538" column="0" severity="warning" message="Element selectors should not be overqualified    3538. .nav-pills.nav-stacked &gt; li &gt; a" source="recess.noOverqualifying"/>
+<error line="3541" column="0" severity="warning" message="Element selectors should not be overqualified    3541. .nav-pills.nav-stacked &gt; li:last-child &gt; a" source="recess.noOverqualifying"/>
+<error line="3576" column="0" severity="warning" message="Element selectors should not be overqualified    3576. .nav &gt; .dropdown.active &gt; a:hover" source="recess.noOverqualifying"/>
+<error line="3577" column="0" severity="warning" message="Element selectors should not be overqualified    3577. .nav &gt; .dropdown.active &gt; a:focus" source="recess.noOverqualifying"/>
+<error line="3582" column="0" severity="warning" message="Element selectors should not be overqualified    3582. .nav &gt; li.dropdown.open.active &gt; a:hover" source="recess.noOverqualifying"/>
+<error line="3583" column="0" severity="warning" message="Element selectors should not be overqualified    3583. .nav &gt; li.dropdown.open.active &gt; a:focus" source="recess.noOverqualifying"/>
+<error line="3588" column="0" severity="warning" message="Element selectors should not be overqualified    3588. .nav li.dropdown.open .caret" source="recess.noOverqualifying"/>
+<error line="3589" column="0" severity="warning" message="Element selectors should not be overqualified    3589. .nav li.dropdown.open.active .caret" source="recess.noOverqualifying"/>
+<error line="3590" column="0" severity="warning" message="Element selectors should not be overqualified    3590. .nav li.dropdown.open a:hover .caret" source="recess.noOverqualifying"/>
+<error line="3591" column="0" severity="warning" message="Element selectors should not be overqualified    3591. .nav li.dropdown.open a:focus .caret" source="recess.noOverqualifying"/>
+<error line="3751" column="0" severity="warning" message="Element selectors should not be overqualified    3751. .nav-collapse.collapse" source="recess.noOverqualifying"/>
+<error line="3915" column="0" severity="warning" message="Element selectors should not be overqualified    3915. .navbar .nav.pull-right" source="recess.noOverqualifying"/>
+<error line="3977" column="0" severity="warning" message="Element selectors should not be overqualified    3977. .navbar .btn-navbar.active" source="recess.noOverqualifying"/>
+<error line="3978" column="0" severity="warning" message="Element selectors should not be overqualified    3978. .navbar .btn-navbar.disabled" source="recess.noOverqualifying"/>
+<error line="3985" column="0" severity="warning" message="Element selectors should not be overqualified    3985. .navbar .btn-navbar.active" source="recess.noOverqualifying"/>
+<error line="4037" column="0" severity="warning" message="Element selectors should not be overqualified    4037. .navbar .nav li.dropdown &gt; a:hover .caret" source="recess.noOverqualifying"/>
+<error line="4038" column="0" severity="warning" message="Element selectors should not be overqualified    4038. .navbar .nav li.dropdown &gt; a:focus .caret" source="recess.noOverqualifying"/>
+<error line="4042" column="0" severity="warning" message="Element selectors should not be overqualified    4042. .navbar .nav li.dropdown.open &gt; .dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="4043" column="0" severity="warning" message="Element selectors should not be overqualified    4043. .navbar .nav li.dropdown.active &gt; .dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="4044" column="0" severity="warning" message="Element selectors should not be overqualified    4044. .navbar .nav li.dropdown.open.active &gt; .dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="4048" column="0" severity="warning" message="Element selectors should not be overqualified    4048. .navbar .nav li.dropdown &gt; .dropdown-toggle .caret" source="recess.noOverqualifying"/>
+<error line="4052" column="0" severity="warning" message="Element selectors should not be overqualified    4052. .navbar .nav li.dropdown.open &gt; .dropdown-toggle .caret" source="recess.noOverqualifying"/>
+<error line="4053" column="0" severity="warning" message="Element selectors should not be overqualified    4053. .navbar .nav li.dropdown.active &gt; .dropdown-toggle .caret" source="recess.noOverqualifying"/>
+<error line="4054" column="0" severity="warning" message="Element selectors should not be overqualified    4054. .navbar .nav li.dropdown.open.active &gt; .dropdown-toggle .caret" source="recess.noOverqualifying"/>
+<error line="4059" column="0" severity="warning" message="Element selectors should not be overqualified    4059. .navbar .nav &gt; li &gt; .dropdown-menu.pull-right" source="recess.noOverqualifying"/>
+<error line="4064" column="0" severity="warning" message="Element selectors should not be overqualified    4064. .navbar .nav &gt; li &gt; .dropdown-menu.pull-right:before" source="recess.noOverqualifying"/>
+<error line="4069" column="0" severity="warning" message="Element selectors should not be overqualified    4069. .navbar .nav &gt; li &gt; .dropdown-menu.pull-right:after" source="recess.noOverqualifying"/>
+<error line="4074" column="0" severity="warning" message="Element selectors should not be overqualified    4074. .navbar .nav &gt; li &gt; .dropdown-menu.pull-right .dropdown-menu" source="recess.noOverqualifying"/>
+<error line="4133" column="0" severity="warning" message="Element selectors should not be overqualified    4133. .navbar-inverse .nav li.dropdown.open &gt; .dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="4134" column="0" severity="warning" message="Element selectors should not be overqualified    4134. .navbar-inverse .nav li.dropdown.active &gt; .dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="4135" column="0" severity="warning" message="Element selectors should not be overqualified    4135. .navbar-inverse .nav li.dropdown.open.active &gt; .dropdown-toggle" source="recess.noOverqualifying"/>
+<error line="4139" column="0" severity="warning" message="Element selectors should not be overqualified    4139. .navbar-inverse .nav li.dropdown &gt; a:hover .caret" source="recess.noOverqualifying"/>
+<error line="4140" column="0" severity="warning" message="Element selectors should not be overqualified    4140. .navbar-inverse .nav li.dropdown &gt; a:focus .caret" source="recess.noOverqualifying"/>
+<error line="4144" column="0" severity="warning" message="Element selectors should not be overqualified    4144. .navbar-inverse .nav li.dropdown &gt; .dropdown-toggle .caret" source="recess.noOverqualifying"/>
+<error line="4148" column="0" severity="warning" message="Element selectors should not be overqualified    4148. .navbar-inverse .nav li.dropdown.open &gt; .dropdown-toggle .caret" source="recess.noOverqualifying"/>
+<error line="4149" column="0" severity="warning" message="Element selectors should not be overqualified    4149. .navbar-inverse .nav li.dropdown.active &gt; .dropdown-toggle .caret" source="recess.noOverqualifying"/>
+<error line="4150" column="0" severity="warning" message="Element selectors should not be overqualified    4150. .navbar-inverse .nav li.dropdown.open.active &gt; .dropdown-toggle .caret" source="recess.noOverqualifying"/>
+<error line="4176" column="0" severity="warning" message="Element selectors should not be overqualified    4176. .navbar-inverse .navbar-search .search-query.focused" source="recess.noOverqualifying"/>
+<error line="4208" column="0" severity="warning" message="Element selectors should not be overqualified    4208. .navbar-inverse .btn-navbar.active" source="recess.noOverqualifying"/>
+<error line="4209" column="0" severity="warning" message="Element selectors should not be overqualified    4209. .navbar-inverse .btn-navbar.disabled" source="recess.noOverqualifying"/>
+<error line="4216" column="0" severity="warning" message="Element selectors should not be overqualified    4216. .navbar-inverse .btn-navbar.active" source="recess.noOverqualifying"/>
+<error line="4431" column="0" severity="warning" message="Element selectors should not be overqualified    4431. .modal-backdrop.fade" source="recess.noOverqualifying"/>
+<error line="4435" column="0" severity="warning" message="Element selectors should not be overqualified    4435. .modal-backdrop.fade.in" source="recess.noOverqualifying"/>
+<error line="4463" column="0" severity="warning" message="Element selectors should not be overqualified    4463. .modal.fade" source="recess.noOverqualifying"/>
+<error line="4470" column="0" severity="warning" message="Element selectors should not be overqualified    4470. .modal.fade.in" source="recess.noOverqualifying"/>
+<error line="4536" column="0" severity="warning" message="Element selectors should not be overqualified    4536. .tooltip.in" source="recess.noOverqualifying"/>
+<error line="4540" column="0" severity="warning" message="Element selectors should not be overqualified    4540. .tooltip.top" source="recess.noOverqualifying"/>
+<error line="4544" column="0" severity="warning" message="Element selectors should not be overqualified    4544. .tooltip.right" source="recess.noOverqualifying"/>
+<error line="4548" column="0" severity="warning" message="Element selectors should not be overqualified    4548. .tooltip.bottom" source="recess.noOverqualifying"/>
+<error line="4552" column="0" severity="warning" message="Element selectors should not be overqualified    4552. .tooltip.left" source="recess.noOverqualifying"/>
+<error line="4574" column="0" severity="warning" message="Element selectors should not be overqualified    4574. .tooltip.top .tooltip-arrow" source="recess.noOverqualifying"/>
+<error line="4581" column="0" severity="warning" message="Element selectors should not be overqualified    4581. .tooltip.right .tooltip-arrow" source="recess.noOverqualifying"/>
+<error line="4588" column="0" severity="warning" message="Element selectors should not be overqualified    4588. .tooltip.left .tooltip-arrow" source="recess.noOverqualifying"/>
+<error line="4595" column="0" severity="warning" message="Element selectors should not be overqualified    4595. .tooltip.bottom .tooltip-arrow" source="recess.noOverqualifying"/>
+<error line="4625" column="0" severity="warning" message="Element selectors should not be overqualified    4625. .popover.top" source="recess.noOverqualifying"/>
+<error line="4628" column="0" severity="warning" message="Element selectors should not be overqualified    4628. .popover.right" source="recess.noOverqualifying"/>
+<error line="4631" column="0" severity="warning" message="Element selectors should not be overqualified    4631. .popover.bottom" source="recess.noOverqualifying"/>
+<error line="4634" column="0" severity="warning" message="Element selectors should not be overqualified    4634. .popover.left" source="recess.noOverqualifying"/>
+<error line="4671" column="0" severity="warning" message="Element selectors should not be overqualified    4671. .popover.top .arrow" source="recess.noOverqualifying"/>
+<error line="4679" column="0" severity="warning" message="Element selectors should not be overqualified    4679. .popover.top .arrow:after" source="recess.noOverqualifying"/>
+<error line="4685" column="0" severity="warning" message="Element selectors should not be overqualified    4685. .popover.right .arrow" source="recess.noOverqualifying"/>
+<error line="4693" column="0" severity="warning" message="Element selectors should not be overqualified    4693. .popover.right .arrow:after" source="recess.noOverqualifying"/>
+<error line="4699" column="0" severity="warning" message="Element selectors should not be overqualified    4699. .popover.bottom .arrow" source="recess.noOverqualifying"/>
+<error line="4707" column="0" severity="warning" message="Element selectors should not be overqualified    4707. .popover.bottom .arrow:after" source="recess.noOverqualifying"/>
+<error line="4713" column="0" severity="warning" message="Element selectors should not be overqualified    4713. .popover.left .arrow" source="recess.noOverqualifying"/>
+<error line="4721" column="0" severity="warning" message="Element selectors should not be overqualified    4721. .popover.left .arrow:after" source="recess.noOverqualifying"/>
+<error line="4765" column="0" severity="warning" message="Element selectors should not be overqualified    4765. a.thumbnail:hover" source="recess.noOverqualifying"/>
+<error line="4766" column="0" severity="warning" message="Element selectors should not be overqualified    4766. a.thumbnail:focus" source="recess.noOverqualifying"/>
+<error line="4840" column="0" severity="warning" message="Element selectors should not be overqualified    4840. a.label:hover" source="recess.noOverqualifying"/>
+<error line="4841" column="0" severity="warning" message="Element selectors should not be overqualified    4841. a.label:focus" source="recess.noOverqualifying"/>
+<error line="4842" column="0" severity="warning" message="Element selectors should not be overqualified    4842. a.badge:hover" source="recess.noOverqualifying"/>
+<error line="4843" column="0" severity="warning" message="Element selectors should not be overqualified    4843. a.badge:focus" source="recess.noOverqualifying"/>
+<error line="4957" column="0" severity="info" message="No need to specify units when a value is 0    4957. width: 0%;" source="recess.zeroUnits"/>
+<error line="5000" column="0" severity="warning" message="Element selectors should not be overqualified    5000. .progress.active .bar" source="recess.noOverqualifying"/>
+<error line="5018" column="0" severity="warning" message="Element selectors should not be overqualified    5018. .progress-danger.progress-striped .bar" source="recess.noOverqualifying"/>
+<error line="5038" column="0" severity="warning" message="Element selectors should not be overqualified    5038. .progress-success.progress-striped .bar" source="recess.noOverqualifying"/>
+<error line="5058" column="0" severity="warning" message="Element selectors should not be overqualified    5058. .progress-info.progress-striped .bar" source="recess.noOverqualifying"/>
+<error line="5078" column="0" severity="warning" message="Element selectors should not be overqualified    5078. .progress-warning.progress-striped .bar" source="recess.noOverqualifying"/>
+<error line="5154" column="0" severity="warning" message="Element selectors should not be overqualified    5154. .carousel-inner &gt; .next.left" source="recess.noOverqualifying"/>
+<error line="5155" column="0" severity="warning" message="Element selectors should not be overqualified    5155. .carousel-inner &gt; .prev.right" source="recess.noOverqualifying"/>
+<error line="5158" column="0" severity="warning" message="Element selectors should not be overqualified    5158. .carousel-inner &gt; .active.left" source="recess.noOverqualifying"/>
+<error line="5161" column="0" severity="warning" message="Element selectors should not be overqualified    5161. .carousel-inner &gt; .active.right" source="recess.noOverqualifying"/>
+<error line="5184" column="0" severity="warning" message="Element selectors should not be overqualified    5184. .carousel-control.right" source="recess.noOverqualifying"/>
+</file>
+</checkstyle>

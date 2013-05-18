@@ -1,11 +1,186 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Template</title>
 
-<!-- TODO: include .js source in browser -->
+  <!-- TODO: include third-party JavaScript components and libraries -->
+  <script src="../components/jquery/jquery.js"></script>
+  <script src="../components/underscore/underscore.js"></script>
+  <script src="../components/holderjs/holder.js"></script>
 
-<!-- TODO: link lessc.js in browser -->
+  <!-- TODO: use the complete Bootstrap JavaScript suite or just individual plugins -->
+  <script src="../components/bootstrap/docs/assets/js/bootstrap.js"></script>
+  <!-- TODO: include your own JavaScript stuff -->
+  <script src="js/myproject.js"></script>
+
+  <!-- LESS sources included here for development, i.e. client-side compilation -->
+  <link rel="stylesheet/less" type="text/css" href="less/myproject.less" />
+  <link rel="stylesheet/less" type="text/css" href="less/myproject-responsive.less" />
+  <script>
+// LESS compiler settings
+less = {
+  env: "development",   /* environment: "development" or "production" */
+  async: false,         /* load imports async */
+  fileAsync: false,     /* load imports async when in a page under a file protocol */
+  poll: 7000,           /* when in watch mode, time in ms between polls */
+  functions: {},        /* user functions, keyed by name */
+  dumpLineNumbers: "comments",    /* print source line numbers in target css: "comments", "mediaQuery", or "all" */
+  relativeUrls: false,  /* whether to adjust url's to be relative; if false, url's are already relative to the entry less file */
+/*  rootpath: ":/a.com/"  /* a path to add on to the start of every url resource */
+};
+  </script>
+  <script src="../components/less/dist/less-1.3.3.js"></script>
 </head>
 <body>
-TODO: set up an example page for dev
+
+  <!-- Showcasing some things -->
+  <div class="container">
+    <!-- (Responsive) Navbar -->
+	<div class="navbar navbar-inverse">
+	  <div class="navbar-inner">
+		<div class="container">
+		  <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+		  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </a>
+		  <!-- Be sure to leave the brand out there if you want it shown -->
+		  <a class="brand" href="#">Project name</a>
+		  <!-- Everything you want hidden at 940px or less, place within here -->
+		  <div class="nav-collapse collapse">
+			<!-- .nav, .navbar-search, .navbar-form, etc -->
+			<ul class="nav">
+			  <li class="active"><a href="#">Home</a></li>
+			  <li><a href="#">Item</a></li>
+			  <li><a href="#">Item</a></li>
+			  <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				  Dropdown
+				  <b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+				  <li><a href="#">Sub-Item</a></li>
+				  <li><a href="#">Sub-Item</a></li>
+				  <li><a href="#">Sub-Item</a></li>
+				</ul>
+			  </li>
+			</ul>
+			<form class="navbar-search pull-left">
+			  <input type="text" class="search-query" placeholder="Search">
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <!-- Grid System -->
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <!-- Hero Unit -->
+		<div class="hero-unit">
+		  <h1>Bootstrap Template</h1>
+		  <p>A minimalistic project set-up using <code>npm</code>, <code>bower</code>,
+		    and <code>grunt</code> to quickly kick-off Bootstrap-based projects. In
+		    addition, <code>phantomjs</code> can be used to run and report QUnit test
+		    suites.</p>
+<pre>$ npm install
+$ node_modules/.bin/bower install
+$ npm install -g grunt-cli
+$ grunt
+</pre>
+		</div>
+	  </div>
+    </div>
+    <div class="row">
+      <div class="span8">
+        <h2>Some Thumbnails</h2>
+		<ul class="thumbnails">
+		  <li class="span3">
+			<div class="thumbnail">
+			  <img data-src="holder.js/270x200" alt="">
+			  <h3>Thumbnail label</h3>
+			  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+				eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+			</div>
+		  </li>
+		  <li class="span5">
+			<div class="thumbnail">
+			  <img data-src="holder.js/470x200" alt="">
+			  <h3>Former media grid</h3>
+			  <p>Suspendisse potenti. Nam iaculis, risus sed varius lobortis, erat nulla
+				lobortis est, ac blandit lacus eros eget diam. Vestibulum vel metus.
+				Aenean mi urna, interdum elementum sollicitudin volutpat, ornare eget leo.
+				Pellentesque posuere hendrerit tellus id sed.</p>
+			</div>
+		  </li>
+		</ul>
+      </div>
+      <div class="span4">
+        <h2>Data &hearts;</h2>
+		<div class="alert alert-block alert-error fade in">
+		  <button type="button" class="close" data-dismiss="alert">×</button>
+		  <strong>Watch out!</strong> Bootstrap's <code>data-*</code> APIs are
+		  really kicking ass! We control interactive JavaScript plugin by writing
+		  <code>data-</code>attributes in our markup!
+		</div>
+		<p><code>data-*</code> APIs are available for Dropdowns, Modals, Alerts,
+		  Carousel, Collapse, Tooltips, Popovers, Tabs, …</p>
+		<!-- Demo modal -->
+		<a href="#myModal" role="button" class="btn btn-mini btn-danger" data-toggle="modal">Launch a demo modal</a>
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Modal header</h3>
+		  </div>
+		  <div class="modal-body">
+			<p>One fine body…</p>
+		  </div>
+		  <div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+			<button class="btn btn-primary">Save changes</button>
+		  </div>
+		</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4 pull-right">
+        <h2>Button collection</h2>
+		<p>
+		  <button class="btn" type="button">Default button</button>
+		  <button class="btn btn-primary" type="button">Primary button</button>
+		</p>
+		<p>
+		  <button class="btn btn-info" type="button">Info button</button>
+		  <button class="btn btn-success" type="button">Success button</button>
+		</p>
+		<p>
+		  <button class="btn btn-warning" type="button">Warning button</button>
+		  <button class="btn btn-danger" type="button">Danger button</button>
+		</p>
+		<p>
+		  <button class="btn btn-inverse" type="button">Inverse button</button>
+		  <button class="btn btn-link" type="button">Link button</button>
+		</p>
+	  </div>
+	  <div class="span8 pull-left">
+	    <h2>Holy grid!</h2>
+	    <p>Watch this lefty column vertically dropping down on small screens. Compare
+	      to the above where the left column vertically bubbles up. It's achieved using
+	      Bootstrap's grid system with <code>pull-left</code> and <code>pull-right</code>
+	      classes.</p>
+	    <div class="alert alert-info">
+		  <strong>Heads up!</strong> You're doing mobile first, aren't you? Sure you do,
+		  since the order of <code>&lt;div&gt;</code>'s in your markup sets the order of visual
+		  appearance on small screens.
+		</div>
+	  </div>
+    </div>
+  </div>
+
 </body>
 </html>

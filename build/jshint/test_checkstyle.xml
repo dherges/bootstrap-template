@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<checkstyle version="4.3">
+	<file name="Gruntfile.js">
+		<error line="3" column="3" severity="error" message="Missing &quot;use strict&quot; statement." source="Missing &quot;use strict&quot; statement." />
+		<error line="3" column="3" severity="error" message="Expected &apos;grunt&apos; to have an indentation at 5 instead at 3." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="4" column="5" severity="error" message="Expected &apos;pkg&apos; to have an indentation at 9 instead at 5." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="6" column="5" severity="error" message="Expected &apos;concat&apos; to have an indentation at 9 instead at 5." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="7" column="7" severity="error" message="Expected &apos;options&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="8" column="9" severity="error" message="Expected &apos;separator&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="9" column="9" severity="error" message="Expected &apos;stripBanners&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="10" column="7" severity="error" message="Expected &apos;}&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="11" column="7" severity="error" message="Expected &apos;dist&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="12" column="9" severity="error" message="Expected &apos;src&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="13" column="9" severity="error" message="Expected &apos;dest&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="14" column="7" severity="error" message="Expected &apos;}&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="15" column="5" severity="error" message="Expected &apos;}&apos; to have an indentation at 9 instead at 5." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="17" column="5" severity="error" message="Expected &apos;uglify&apos; to have an indentation at 9 instead at 5." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="18" column="7" severity="error" message="Expected &apos;options&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="19" column="9" severity="error" message="Expected &apos;preserveComments&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="20" column="7" severity="error" message="Expected &apos;}&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="22" column="7" severity="error" message="Expected &apos;dist&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="23" column="9" severity="error" message="Expected &apos;src&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="24" column="9" severity="error" message="Expected &apos;dest&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="25" column="7" severity="error" message="Expected &apos;}&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="26" column="5" severity="error" message="Expected &apos;}&apos; to have an indentation at 9 instead at 5." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="28" column="5" severity="error" message="Expected &apos;jshint&apos; to have an indentation at 9 instead at 5." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="29" column="7" severity="error" message="Expected &apos;options&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="30" column="9" severity="error" message="Expected &apos;force&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="31" column="9" severity="error" message="Expected &apos;reporter&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="32" column="7" severity="error" message="Expected &apos;}&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="33" column="7" severity="error" message="Expected &apos;test&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="34" column="9" severity="error" message="Expected &apos;src&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="35" column="9" severity="error" message="Expected &apos;options&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="36" column="7" severity="error" message="Expected &apos;}&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="37" column="7" severity="error" message="Expected &apos;source&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="38" column="9" severity="error" message="Expected &apos;src&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="39" column="9" severity="error" message="Expected &apos;options&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="40" column="7" severity="error" message="Expected &apos;}&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="41" column="5" severity="error" message="Expected &apos;}&apos; to have an indentation at 9 instead at 5." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="43" column="5" severity="error" message="Expected &apos;connect&apos; to have an indentation at 9 instead at 5." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="44" column="7" severity="error" message="Expected &apos;server&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="45" column="9" severity="error" message="Expected &apos;options&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="46" column="11" severity="error" message="Expected &apos;host&apos; to have an indentation at 21 instead at 11." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="47" column="11" severity="error" message="Expected &apos;port&apos; to have an indentation at 21 instead at 11." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="48" column="11" severity="error" message="Expected &apos;middleware&apos; to have an indentation at 21 instead at 11." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="49" column="13" severity="error" message="Expected &apos;return&apos; to have an indentation at 25 instead at 13." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="50" column="15" severity="error" message="Expected &apos;connect&apos; to have an indentation at 29 instead at 15." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="51" column="15" severity="error" message="Expected &apos;connect&apos; to have an indentation at 29 instead at 15." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="52" column="15" severity="error" message="Expected &apos;connect&apos; to have an indentation at 29 instead at 15." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="53" column="13" severity="error" message="Expected &apos;]&apos; to have an indentation at 25 instead at 13." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="54" column="11" severity="error" message="Expected &apos;}&apos; to have an indentation at 21 instead at 11." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="55" column="9" severity="error" message="Expected &apos;}&apos; to have an indentation at 17 instead at 9." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="56" column="7" severity="error" message="Expected &apos;}&apos; to have an indentation at 13 instead at 7." source="Expected &apos;{a}&apos; to have an indentation at {b} instead at {c}." />
+		<error line="56" column="7" severity="error" message="Too many errors. (56% scanned)." source="Too many errors." />
+		<error line="1" column="0" severity="warning" message="Implied global &apos;module&apos;" source="jshint.implied-globals" />
+	</file>
+</checkstyle>

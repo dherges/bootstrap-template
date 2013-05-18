@@ -3,6 +3,7 @@ build/reports
 components
 dist
 node_modules
+npm-debug.log
 
 # Mac OS and Eclipse
 .DS_Store

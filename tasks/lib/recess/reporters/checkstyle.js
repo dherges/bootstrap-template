@@ -1,16 +1,16 @@
 /*
  * Copyright (c) 2013 David Herges <david@spektrakel.de>
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -42,8 +42,8 @@ var _ = require('underscore')
  * @param {Object} options Options for the reporter
  */
 function CheckstyleReporter(options) {
-  this.options = _.extend({}, defaults, options)
-  this.report = ''
+  this.options = _.extend({}, defaults, options);
+  this.report = '';
 }
 
 CheckstyleReporter.prototype = {
@@ -53,46 +53,46 @@ CheckstyleReporter.prototype = {
   /**
    * Starts a checkstyle report.
    */
-, startReport: function() {
-    this.report = '<?xml version="1.0" encoding="UTF-8"?>'
-    this.report += '<checkstyle version="4.0.0">'
+, startReport: function () {
+    this.report = '<?xml version="1.0" encoding="UTF-8"?>\n';
+    this.report += '<checkstyle version="4.0.0">\n';
   }
 
   /**
    * Ends a checkstyle report and returns XML as string.
    * @return {String} XML of checkstyle report
    */
-, endReport: function() {
-    this.report += '</checkstyle>'
-    return this.report
+, endReport: function () {
+    this.report += '</checkstyle>\n';
+    return this.report;
   }
 
   /**
    * Starts reporting errors of a source file.
    * @param {String} srcFile Filename of .less or .css source file
    */
-, startFile: function(srcFile) {
-    this.report += '<file name="' + srcFile + '">'
+, startFile: function (srcFile) {
+    this.report += '<file name="' + srcFile + '">\n';
   }
 
   /**
    * Ends reporting errors of a source file.
    */
-, endFile: function() {
-    this.report += '</file>'
+, endFile: function () {
+    this.report += '</file>\n';
   }
 
   /**
    * Logs an error of the current source file.
    * @param {Object} err RECESS error object
    */
-, logError: function(err) {
-    var mappedErr = this.translate(err)
+, logError: function (err) {
+    var mappedErr = this.translate(err);
     this.report += '<error line="' + mappedErr.line + '"'
             + ' column="' + mappedErr.column + '"'
             + ' severity="' + mappedErr.severity + '"'
             + ' message="' + _.escape(mappedErr.message) + '"'
-            + ' source="' + _.escape(mappedErr.source) + '"/>'
+            + ' source="' + _.escape(mappedErr.source) + '"/>\n';
   }
 
   /**
