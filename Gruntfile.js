@@ -1,3 +1,10 @@
+/*
+ * Gruntfile.js: task defininitions for grunt
+ * http://gruntjs.com/
+ *
+ * TODO: adapt to the needs of your very own project!
+ */
+
 module.exports = function(grunt) {
 
   grunt.initConfig({

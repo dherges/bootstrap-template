@@ -40,68 +40,28 @@ Dependencies for packaging and distributing the project (bootstrap, jquery, et a
 
 ## Project Structure
 
-When dependencies are resolved and locally installed, the project file structure should look like this:
+With resolved and installed dependencies, the project file structure should look like this:
 
-	build/           ### Build stuff for your project
-		reports/     # generated code quality reports
-		jshint.rc    # JSHINT configuration file
-		mapping.json # RECESS checkstyle error mapping
-		recess.json  # RECESS configuration file
-	components/      ### Bower dependencies
-	dist/            ### Target directory for the distributable
-		css/         # package of your project.
-		img/         #
-		js/          #
-	node_modules/    ### Node dependencies
-	src/             ### Source directory of your project,
-		img/         # containining js, less, images, templates,
-		js/          # and other files that make up your project.
-		less/        #
-		templates/   #
+	components/      ### Web components (bower dependencies)
+	dist/            ### Target directory for the distributable package of your project
+	node_modules/    ### Development tools (node dependencies)
+	src/             ### Source files of your project, containing
+		index.html   # a demo page to show-case some things
+		img/         # images, e.g. icons, background graphics
+		js/          # javascript sources
+		less/        # less sources (which should import bootstrap's .less)
+		templates/   # template files, e.g. .mustache if you're using mustache
+	tasks/           ### Additional grunt tasks, e.g. for jshint, phantomjs
+	.jshintrc        # JSHint configuration
+	Gruntfiles.js    # grunt task definitions
+	bower.json       # bower dependency definitions
+	package.json     # node dependency definitions
+	recess-checkstyle.json  # checkstyle report configuration for grunt's recess:checkstyle task
+	recess.json      # RECESS linter configuration
+
+Feel free to mix and max and to adapt to the needs of your very own project!
 
 
 ## Grunt my build
 
-
-
-## DEPRECATED: Makefile
-
-The makefile provides various make targets so that parts of the project can be built invidually. To run a target, just do `make TARGETNAME`. See the makefile for target definitions.
-
-In the following, more information about these make targets and the LESS and JavaScript tools.
-
-
-### LESS
-
-We use RECESS as compiler & code quality tool for our .less files.
-
-To use RECESS as a code quality tool, run on shell:
-
-	make recess
-	make recess-repoirt
-
-When used as a linter, RECESS needs a configuration in `recess.json`. The file must contain valid JSON data. Available options can be found at [https://github.com/twitter/recess#programmatic-api](https://github.com/twitter/recess#programmatic-api, "RECESS on GitHub")
-
-
-To use RECESS as a .less compiler and build the .css files, run on shell:
-
-	make recess-compile
-
-
-
-### JavaScript
-
-We use UglifyJS as compiler for our .js files and JSHINT as code quality tool for our .js files.
-
-JSHINT needs a configuration in `jshint.rc`. The file must continain a valid JSHint configuration. Available options can be found at [http://jshint.com/docs/](http://jshint.com/docs/ "JSHInt Documentation").
-
-To analyze the JavaScript code quality using JSHINT, run on shell:
-
-	make jshint
-	make jshint-report
-
-
-To concatenate and minify the .js files using UglifyJS, run on shell:
-
-	make uglifyjs
-
+TODO: give some description of the grunt tasks
