@@ -23,9 +23,10 @@ module.exports = function(grunt) {
       reportFile: undefined
     });
 
-    // Get output directory and report file
+    // get files and directories
+    var srcFiles = this.files[0].src;
+    var destFile = this.files[0].dest;
     var output = options.output;
-    var reportFile = options.reportFile;
 
     // read config.json file
     var config = undefined;
@@ -42,7 +43,11 @@ module.exports = function(grunt) {
     }
 
     // Prepare reporter object
-    if (options.reporter) {
+    options.reporter ? report() : log();
+
+    // Use the recess-reporting.js add-on
+    function report() {
+      // Require and instantiate the reporter class
       var reporterClass;
       var reporter = undefined;
       switch (true) {
@@ -61,57 +66,56 @@ module.exports = function(grunt) {
       }
 
       // Sophisticated reporting using a custom reporter
-      require('./lib/recess/recess-reporting.js').run(this.filesSrc, config, reporter, output, function () {
+      var reporting = require('./lib/recess/recess-reporting.js')
+      var result = reporting.run(srcFiles, config, reporter, output, function () {
         // Write report to the report file, if wanted
-        if (reportFile) {
-          reportFile = grunt.template.process(reportFile);
-          var destDir = path.dirname(reportFile);
+        if (destFile) {
+          destFile = grunt.template.process(destFile);
+          var destDir = path.dirname(destFile);
           if (!grunt.file.exists(destDir)) {
             grunt.file.mkdir(destDir);
           }
-          grunt.file.write(reportFile, reporter.report);
-          grunt.log.ok('Report "' + reportFile + '" created.');
+          grunt.file.write(destFile, reporter.report);
+          grunt.log.ok('Report "' + destFile + '" created.');
         }
 
         done(options.force ? options.force : result);
       });
-
-      return;
     }
 
-    // Plain reporting by using RECESS's programmatic API
-    var recess = require('recess');
-    config.stripColors = true;
-    config.cli = true;
-
-    // Hook into stdout to capture report
-    var data = '';
-    if (reportFile) {
-      grunt.util.hooker.hook(process.stdout, 'write', {
-        pre: function (out) {
-          data += out;
-          return grunt.util.hooker.preempt();
-        }
-      });
-    }
-
-    var result = recess(this.filesSrc, config, function(err, instances) {
-
-      // Write the output of the reporter if wanted
-      if (reportFile) {
-        grunt.util.hooker.unhook(process.stdout, 'write');
-        reportFile = grunt.template.process(reportFile);
-        var destDir = path.dirname(reportFile);
-        if (!grunt.file.exists(destDir)) {
-          grunt.file.mkdir(destDir);
-        }
-        grunt.file.write(reportFile, data);
-        grunt.log.ok('Report "' + reportFile + '" created.');
+    // Use plain RECESS
+    function log() {
+      // Hook into stdout to capture report
+      var data = '';
+      if (destFile) {
+        grunt.util.hooker.hook(process.stdout, 'write', {
+          pre: function (out) {
+            data += out;
+            return grunt.util.hooker.preempt();
+          }
+        });
       }
 
-      done(options.force ? options.force : result);
-    });
+      // Plain reporting by using RECESS's programmatic API
+      var recess = require('recess');
+      config.stripColors = true;
+      config.cli = true;
+      var result = recess(srcFiles, config, function(err, instances) {
+        // Write recesss output to destFile if wanted
+        if (destFile) {
+          grunt.util.hooker.unhook(process.stdout, 'write');
+          destFile = grunt.template.process(destFile);
+          var destDir = path.dirname(destFile);
+          if (!grunt.file.exists(destDir)) {
+            grunt.file.mkdir(destDir);
+          }
+          grunt.file.write(destFile, data);
+          grunt.log.ok('Report "' + destFile + '" created.');
+        }
 
+        done(options.force ? options.force : result);
+      });
+    }
 
   });
 

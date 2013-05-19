@@ -71,17 +71,15 @@ module.exports = function(grunt) {
       },
       checkstyle: {
         src: ['src/less/myproject.less'],
+        dest: 'logs/recess/checkstyle.xml',
         options: {
           reporter: 'checkstyle',
-          reportFile: 'logs/recess/checkstyle.xml',
           output: 'logs/recess'
         }
       },
       log: {
         src: ['src/less/myproject.less', 'src/less/myproject-responsive.less'],
-        options: {
-          reportFile: 'logs/recess/recess.log'
-        }
+        dest: 'logs/recess/recess.log'
       }
     }
   });
