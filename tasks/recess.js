@@ -12,7 +12,6 @@ module.exports = function(grunt) {
   var path = require('path')
 
   grunt.registerMultiTask('recess', 'Lint .less or .css files with RECESS.', function() {
-    var done = this.async();
 
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
@@ -42,8 +41,13 @@ module.exports = function(grunt) {
       mapping = grunt.file.readJSON(options.mapping);
     }
 
-    // Prepare reporter object
-    options.reporter ? report() : log();
+    // Run the linter
+    var done = this.async();
+    if (options.reporter) {
+      report();
+    } else {
+      log();
+    }
 
     // Use the recess-reporting.js add-on
     function report() {
