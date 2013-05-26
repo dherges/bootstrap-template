@@ -17,17 +17,18 @@ And there you go! Off and running!
 
 ## Package and Dependency Management
 
-Build tool dependencies are managed by npm, project package management is done by bower.
+Build tool dependencies are managed by npm, web package management is done by Bower, and the tool suite is task-automated by Grunt.
 
-It's required that you have [node](http://nodejs.org "node.js") and [npm](https://npmjs.org "npm") installed on your system. Then, all other dependencies are managed (including bower which is manageable through npm – wooohooo, how meta that is!).
+It's required that you have [node](http://nodejs.org "node.js") and it's package manager [npm](https://npmjs.org "npm") installed on your system. Usually, npm is distributed alongside node. Then, other dependencies are managed (including Bower which is manageable through npm – wooohooo, how meta that is!).
 
  * Install local dependencies for build tools (as specified in package.json):
    * `npm install`
- * Install local dependencies for packaging (as specified in component.json):
+ * Install local dependencies for web packages (as specified in component.json):
    * `bower install` or
    * `node_modules/.bin/bower install`
- * Let grunt do a demo build:
+ * Let Grunt do a build:
    * `grunt`
+
 
 ### Node Dependencies
 
@@ -36,6 +37,14 @@ Dependencies for build tools (grunt, recess, jshint, et al.) are specified in th
 ### Bower Dependencies
 
 Dependencies for packaging and distributing the project (bootstrap, jquery, et al.) are specified in component.json file. These are managed by bower.
+
+Tun run `bower` directly from the command-line, you must have it installed globally on your system: `npm install -g bower`
+
+### Grunt Task Automation
+
+The build tools and their tasks are automated by Grunt and task definitions are specified in Gruntfile.js file.
+
+To run `grunt` directly from command-line you must have `grunt-cli` globally installed: `npm install -g grunt-cli`
 
 
 ## Project Structure
@@ -53,8 +62,8 @@ With resolved and installed dependencies, the project file structure should look
 		templates/   # template files, e.g. .mustache if you're using mustache
 	tasks/           ### Additional grunt tasks, e.g. for jshint, phantomjs
 	.jshintrc        # JSHint configuration
-	Gruntfiles.js    # grunt task definitions
-	bower.json       # bower dependency definitions
+	Gruntfiles.js    # Grunt task definitions
+	bower.json       # Bower dependency definitions
 	package.json     # node dependency definitions
 	recess-checkstyle.json  # checkstyle report configuration for grunt's recess:checkstyle task
 	recess.json      # RECESS linter configuration
