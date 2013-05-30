@@ -1,5 +1,3 @@
-bootstrap-template is - officially - distributed under the MIT License.
-
 Copyright (c) 2013 David Herges <david@spektrakel.de>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -12,6 +10,17 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
+Custom grunt tasks and libraries (see the `tasks` directory) are subject to the
+above condition; i.e. copyright notice and permission notice shall be included
+in all copies or substantial portions of the grunt tasks and libraries.
+
+Remaining work – i.e., Gruntfile.js, .json config files, and demo stuff in the
+`src` directory - may be handled less restrictive. Feel free to add, change,
+delete, move, or copy things as you desire. Whatever you do with it, just do
+it. In effect, by kick-starting your project using the template, you are not
+required to place the above copyright notice and this permission notice in your
+work. However, giving some notice or stating a reference will be appreciated.
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -19,14 +28,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-Heads Up!
-
-The license agreement applies to the custom grunt tasks shipped with this
-project template; see the tasks directory. The source code of those tasks is
-provided "as is".
-
-For the remainder of this template, feel free to add, change, delete, move, or
-copy things as you desire. Whatever you do with it, just do it. Stating some
-notice and reference to this source will be appreciated.
