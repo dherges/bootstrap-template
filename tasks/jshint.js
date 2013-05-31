@@ -7,7 +7,7 @@
  */
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   var path = require('path');
   var jshint = require('jshint/src/cli/cli');
@@ -25,8 +25,9 @@ module.exports = function(grunt) {
       reporter: null
     });
 
-    // Get output file
-    var output = options.output;
+    // Get source and destination files
+    var srcFiles = this.files[0].src;
+    var destFile = this.files[0].dest;
 
     // Prepare reporter object
     var reporter = options.reporter;
@@ -62,7 +63,7 @@ module.exports = function(grunt) {
 
     // Hook into stdout to capture report
     var data = '';
-    if (output) {
+    if (destFile) {
       grunt.util.hooker.hook(process.stdout, 'write', {
         pre: function (out) {
           data += out;
@@ -81,15 +82,15 @@ module.exports = function(grunt) {
     });
 
     // Write the output of the reporter if wanted
-    if (output) {
+    if (destFile) {
       grunt.util.hooker.unhook(process.stdout, 'write');
-      output = grunt.template.process(output);
-      var destDir = path.dirname(output);
+      destFile = grunt.template.process(destFile);
+      var destDir = path.dirname(destFile);
       if (!grunt.file.exists(destDir)) {
         grunt.file.mkdir(destDir);
       }
-      grunt.file.write(output, data);
-      grunt.log.ok('Report "' + output + '" created.');
+      grunt.file.write(destFile, data);
+      grunt.log.ok('Report "' + destFile + '" created.');
     }
 
     done(options.force ? options.force : result);
