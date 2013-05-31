@@ -50,8 +50,8 @@ module.exports = function(grunt) {
         src: ['Gruntfile.js', 'src/js/**/*.js'],
         dest: 'logs/jshint/checkstyle.xml'
       },
-      // sub-task: jshint:util
-      util: {
+      // sub-task: jshint:tasks
+      tasks: {
         src: ['tasks/**/*.js'],
         dest: 'logs/jshint/tasks-checkstyle.xml'
       }
@@ -118,7 +118,7 @@ module.exports = function(grunt) {
       },
       // sub-task: recess:checkstyle
       checkstyle: {
-        src: ['src/less/myproject.less'],
+        src: ['src/less/myproject.less', 'src/less/myproject-responsive.less'],
         dest: 'logs/recess/checkstyle.xml',
         options: {
           reporter: 'checkstyle',
