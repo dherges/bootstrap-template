@@ -5,7 +5,7 @@ A project template to quickly kick-off a project based on Twitter's Bootstrap fr
 
 ## Kick-Off
 
-Checkout or download, then
+Get yourself the source, then
 
 	cd {my-project-directory}
 	npm install
@@ -36,20 +36,20 @@ Dependencies for build tools (grunt, recess, jshint, et al.) are specified in th
 
 ### Bower Dependencies
 
-Dependencies for packaging and distributing the project (bootstrap, jquery, et al.) are specified in component.json file. These are managed by bower.
-
-Tun run `bower` directly from the command-line, you must have it installed globally on your system: `npm install -g bower`
+Dependencies for packaging and distributing the project (bootstrap, jquery, et al.) are specified in component.json file. These are managed by bower. Tun run `bower` directly from the command-line, you must have it installed globally on your system: `npm install -g bower`
 
 ### Grunt Task Automation
 
-The build tools and their tasks are automated by Grunt and task definitions are specified in Gruntfile.js file.
+The build tools and their tasks are automated by Grunt and task definitions are specified in Gruntfile.js file. To run `grunt` directly from command-line you must have `grunt-cli` globally installed: `npm install -g grunt-cli`
 
-To run `grunt` directly from command-line you must have `grunt-cli` globally installed: `npm install -g grunt-cli`
+### PhantomJS QUnit Test Reporting
+
+The Gruntfile ships with a phantom task to automatically run the QUnit test suites and generate a junit-formatted report out of the test results. In order to run the task, you mast have `phantomjs` executable on your command-line. Get it from [http://phantomjs.org](http://phantomjs.org/ "phantomjs").
 
 
 ## Project Structure
 
-With resolved and installed dependencies, the project file structure should look like this:
+With dependencies resolved, the project file structure should look like this:
 
 	components/      ### Web components (bower dependencies)
 	dist/            ### Target directory for the distributable package of your project
