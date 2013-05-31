@@ -63,7 +63,7 @@ module.exports = function(grunt) {
       }
 
       // Sophisticated reporting using a custom reporter
-      var reporting = require('./lib/recess/recess-reporting.js')
+      var reporting = require('./lib/recess/reporting.js')
       var result = reporting.run(srcFiles, config, reporter, output, function () {
         // Write report to the report file, if wanted
         if (destFile) {
