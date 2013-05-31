@@ -44,14 +44,7 @@ module.exports = function(grunt) {
     // Run the linter
     var done = this.async();
     if (options.reporter) {
-      report();
-    } else {
-      log();
-    }
-
-    // Use the recess-reporting.js add-on
-    function report() {
-      // Require and instantiate the reporter class
+      // Use the recess-reporting.js add-on, require and instantiate the reporter class
       var reporterClass;
       var reporter = undefined;
       switch (true) {
@@ -85,11 +78,8 @@ module.exports = function(grunt) {
 
         done(options.force ? options.force : result);
       });
-    }
-
-    // Use plain RECESS
-    function log() {
-      // Hook into stdout to capture report
+    } else {
+      // Use plain RECESS, hook into stdout to capture report
       var data = '';
       if (destFile) {
         grunt.util.hooker.hook(process.stdout, 'write', {
