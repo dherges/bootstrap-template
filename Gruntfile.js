@@ -79,13 +79,20 @@ module.exports = function(grunt) {
     phantom: {
       // sub-task: phantom:qunit
       qunit: {
-  // TODO: how to write reports to disk?
-        src: ['src/js/tests/runner.html'],
-        dest: 'logs/qunit',
+        // Sophisticated Grunt feature: dynamically build the src-dest mapping
+        // For each '*.html' file in 'src/js/tests', write a 'logs/qunit/*.xml'
+        // http://gruntjs.com/configuring-tasks#building-the-files-object-dynamically
+        files: [
+          {
+            expand: true,        // Enable dynamic expansion.
+            cwd: 'src/js/tests', // Src matches are relative to this path.
+            src: ['**/*.html'],  // Actual pattern(s) to match.
+            dest: 'logs/qunit',  // Destination path prefix.
+            ext: '.xml',         // Dest filepaths will have this extension.
+          },
+        ],
         options: {
-          baseUrl: 'http://localhost:3000/',
-          url: 'http://localhost:3000/src/js/tests/runner.html',
-          report: 'junit'
+          baseUrl: 'http://localhost:3000/'
         }
       }
     },

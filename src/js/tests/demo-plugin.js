@@ -1,6 +1,6 @@
 $(function () {
 
-  module("foobazaaar")
+  module("foobazaaar");
 
     test("should provide no conflict", function () {
       var foobazaaar = $.fn.foobazaaar.noConflict();
