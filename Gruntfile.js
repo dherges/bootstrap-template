@@ -99,15 +99,15 @@ module.exports = function(grunt) {
 
     // task: less
     less: {
-      // sub-task: less:dist
-      dist: {
+      // sub-task: less:compile
+      compile: {
         files: {
           'dist/css/myproject.css': 'src/less/myproject.less',
           'dist/css/myproject-responsive.css': 'src/less/myproject-responsive.less'
         }
       },
-      // sub-task: less:min
-      min: {
+      // sub-task: less:compress
+      compress: {
         options: {
           yuicompress: true
         },
@@ -139,20 +139,23 @@ module.exports = function(grunt) {
       }
     }
 
+    // TODO: add a grunt task for dist'ing image assets...
+
+    // TODO: grunt task to resolve node & bower dependencies?
   });
 
-  // load task definitions and grunt plugins
+  // Load task definitions and grunt plugins
   grunt.loadTasks('tasks');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-less');
 
-
-  // Alias Tasks: test, dist
+  // Alias Tasks: dist, lint, test
+  grunt.registerTask('dist', ['concat', 'uglify', 'less']);
+  grunt.registerTask('lint', ['jshint', 'recess']);
   grunt.registerTask('test', ['connect', 'phantom']);
-  grunt.registerTask('dist', ['concat', 'uglify']);
 
-  grunt.registerTask('default', ['dist', 'jshint', 'test']);
+  grunt.registerTask('default', ['dist', 'lint', 'test']);
 
 };
