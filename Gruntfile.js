@@ -137,25 +137,60 @@ module.exports = function(grunt) {
         src: ['src/less/myproject.less', 'src/less/myproject-responsive.less'],
         dest: 'logs/recess/recess.log'
       }
+    },
+
+    // task: sprite
+    sprite: {
+      // sub-task: sprite:set
+      set: {
+        src: ['src/img/set/**/*.gif'],
+        destImg: 'src/img/set.png',
+        destCSS: 'src/less/sprites/sprite-set.less',
+        imgPath: '../src/img/set.png' // we must explicitly set 'imgPath' because grunt-contrib-less does not (yet) support 'relativeUrls' option
+      }
+    },
+
+    // task: copy
+    copy: {
+      // sub-task: copy:img
+      img: {
+        files: [
+          // copy all .png's from src/img to dist/img
+          {expand: true, cwd: 'src/img', src: ['**/*.png'], dest: 'dist/img'},
+          // copy all .png's from components/bootstrap/img to dist/img
+          {expand: true, cwd: 'components/bootstrap/img', src: ['**/*.png'], dest: 'dist/img'}
+        ]
+      }
+    },
+
+    // TODO: grunt task to resolve bower dependencies?
+
+    // task: watch
+    watch: {
+      // sub-task: watch:less
+      less: {
+        files: ['src/less/**/*.less'],
+        tasks: ['less']
+      }
     }
 
-    // TODO: add a grunt task for dist'ing image assets...
-
-    // TODO: grunt task to resolve node & bower dependencies?
   });
 
   // Load task definitions and grunt plugins
   grunt.loadTasks('tasks');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-spritesmith');
 
-  // Alias Tasks: dist, lint, test
-  grunt.registerTask('dist', ['concat', 'uglify', 'less']);
+  // Alias Tasks: lint, test, dist
+  grunt.registerTask('dist', ['concat', 'uglify', 'less', 'copy']);
   grunt.registerTask('lint', ['jshint', 'recess']);
   grunt.registerTask('test', ['connect', 'phantom']);
 
-  grunt.registerTask('default', ['dist', 'lint', 'test']);
+  grunt.registerTask('default', ['lint', 'test', 'dist']);
 
 };
