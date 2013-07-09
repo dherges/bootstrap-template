@@ -120,7 +120,7 @@ module.exports = function (grunt) {
         done: function (err) {
           if (err) {
             // Abort on an error in the phantom script
-            grund.log.writeln();
+            grunt.log.writeln();
             grunt.verbose.write('PhantomJS got an error on', url.src);
             grunt.warn(err);
             done();
