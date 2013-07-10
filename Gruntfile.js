@@ -99,6 +99,9 @@ module.exports = function(grunt) {
 
     // task: less
     less: {
+      options: {
+        relativeUrls: true
+      },
       // sub-task: less:compile
       compile: {
         files: {
@@ -145,8 +148,7 @@ module.exports = function(grunt) {
       set: {
         src: ['src/img/set/**/*.gif'],
         destImg: 'src/img/set.png',
-        destCSS: 'src/less/sprites/sprite-set.less',
-        imgPath: '../src/img/set.png' // we must explicitly set 'imgPath' because grunt-contrib-less does not (yet) support 'relativeUrls' option
+        destCSS: 'src/less/sprites/sprite-set.less'
       }
     },
 
@@ -184,6 +186,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-spritesmith');
 
   // Alias Tasks: lint, test, dist
