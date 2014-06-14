@@ -1,38 +1,36 @@
 {
-    "name": "bootstrap-template"
-  , "description": "Bootstrap Template Project"
-  , "version": "0.1.0"
-  , "keywords": ["bootstrap", "html5", "css3", "less", "js", "jquery"]
-  , "homepage": "http://www.spektrakel.de"
-  , "author": "David Herges <david@spektrakel.de>"
-  , "repository": {
-      "type": "git"
-    , "url": "https://github.com/dherges/bootstrap-template.git"
-  }
-  , "licenses": [
+  "name": "bootstrap-template",
+  "description": "Bootstrap Template Project",
+  "version": "3.0.0",
+  "keywords": [
+    "bootstrap",
+    "html5",
+    "css",
+    "less",
+    "js",
+    "web"
+  ],
+  "homepage": "http://www.spektrakel.de",
+  "author": "David Herges <david@spektrakel.de>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dherges/bootstrap-template.git"
+  },
+  "licenses": [
     {
-        "type": "MIT"
-      , "url": "http://opensource.org/licenses/MIT"
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
     }
-  ]
-  , "devDependencies": {
-      "bower": "~0.9.0"
-    , "connect": "~2.7.9"
-    , "grunt": "~0.4.1"
-    , "grunt-contrib-concat": "~0.3.0"
-    , "grunt-contrib-connect": "~0.3.0"
-    , "grunt-contrib-copy": "~0.4.1"
-    , "grunt-contrib-less": "~0.6.0"
-    , "grunt-contrib-uglify": "~0.2.0"
-    , "grunt-contrib-watch": "~0.4.4"
-    , "grunt-lib-phantomjs": "~0.3.0"
-    , "grunt-recess": "git://github.com/dherges/grunt-recess#v0.1.0"
-    , "grunt-spritesmith": "~1.5.1"
-    , "jshint": "~2.0.1"
-    , "less": "1.3.3"
-    , "nopt": "~2.1.1"
-    , "recess": "1.1.6"
-    , "uglify-js": "~2.2.1"
-    , "underscore": "~1.4.4"
+  ],
+  "devDependencies": {
+    "bower": "^1.3.5",
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-less": "^0.11.2",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-spritesmith": "^2.1.0"
   }
 }

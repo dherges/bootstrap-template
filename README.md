@@ -15,6 +15,9 @@ Get yourself the source, then
 And there you go! Off and running!
 
 
+
+# DEPRECATED STUFF FROM BOOTSTRAP 2 TIMES (back in 2013...)
+
 ## Package and Dependency Management
 
 Build tool dependencies are managed by npm, web package management is done by Bower, and the tool suite is task-automated by Grunt.
@@ -74,3 +77,4 @@ Feel free to mix and max and to adapt to the needs of your very own project!
 ## Grunt my build
 
 TODO: give some description of the grunt tasks
+

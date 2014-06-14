@@ -3,12 +3,17 @@ dist
 logs
 
 # Bower
-components
+bower_components
 
 # NPM
 node_modules
 npm-debug.log
 
+# temporary files
+*.log
+*.out
+*.pid
+*.seed
 
 ### IDEs
 # Eclipse
@@ -17,6 +22,10 @@ npm-debug.log
 .project
 .settings
 .externalToolBuilders/
+
+# Sublime Text
+*.sublime-*
+
 
 # Mac OS X
 .DS_Store

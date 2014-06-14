@@ -1,0 +1,18 @@
+# Set default behaviour, in case users don't have core.autocrlf set.
+* text=lf
+* text eol=lf
+*.* eol=lf
+
+*.css   text eol=lf
+*.html  text eol=lf
+*.js    text eol=lf
+*.json  text eol=lf
+*.less  text eol=lf
+*.md    text eol=lf
+*.svg   text eol=lf
+*.yml   text eol=lf
+
+*.jpg binary
+*.gif binary
+*.png binary
+*.jpeg binary
