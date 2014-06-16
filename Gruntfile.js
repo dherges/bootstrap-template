@@ -16,6 +16,9 @@ module.exports = function(grunt) {
       scripts: 'dist/scripts',
       styles:  'dist/styles'
     },
+    docs: { /* pathes for the documentation */
+      dist:    'docs/dist'
+    },
 
     connect: {
       // grunt connect:server
@@ -25,15 +28,6 @@ module.exports = function(grunt) {
           port: 3000,
           base: '.',
           keepalive: true
-/*
-          middleware: function(connect, options) {
-            return [
-              connect.static(options.base),
-              connect.directory(options.base),
-              connect.logger('dev')
-            ];
-          }
-*/
         }
       }
     },
@@ -113,16 +107,24 @@ module.exports = function(grunt) {
       // grunt copy:fonts
       fonts: {
         files: [
-          // copy all files from bower_components/bootstrap/fonts to dist/fonts
-          {expand: true, cwd: 'bower_components/bootstrap/fonts', src: ['**/*'], dest: '<%= dist.fonts %>'}
+          // copy bootstrap fonts to dist/fonts
+          {expand: true, cwd: 'bower_components/bootstrap/dist/fonts', src: ['**/*'], dest: '<%= dist.fonts %>'}
         ]
       },
       // grunt copy:scripts
       scripts: {
         files: [
-          // copy all files from bower_components/bootstrap/fonts to dist/scripts
-          {expand: true, cwd: 'bower_components/bootstrap/js', src: ['**/*'], dest: '<%= dist.scripts %>'}
+          // copy bootstrap js files to dist/scripts
+          {expand: true, cwd: 'bower_components/bootstrap/dist/js', src: ['**/*'], dest: '<%= dist.scripts %>'}
         ]
+      },
+      dist2docs: {
+        files: {
+          'docs/dist/css/bootstrap.css': 'dist/styles/main.css',
+          'docs/dist/css/bootstrap.min.css': 'dist/styles/main.min.css',
+          'docs/dist/js/bootstrap.min.js': 'dist/scripts/bootstrap.min.js',
+          'docs/dist/js/bootstrap.js': 'dist/scripts/bootstrap.js'
+        }
       }
     },
 
@@ -212,5 +214,6 @@ module.exports = function(grunt) {
   grunt.registerTask('test', ['connect']);
 
   grunt.registerTask('default', ['lint', 'test', 'dist']);
+  grunt.registerTask('docs', ['dist', 'copy:dist2docs']);
 
 };
