@@ -1,12 +1,12 @@
 ### Project
-dist
-logs
+/dist
+/logs
 
 # Bower
-bower_components
+/bower_components
 
 # NPM
-node_modules
+/node_modules
 npm-debug.log
 
 # temporary files
