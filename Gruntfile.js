@@ -10,9 +10,15 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    dist: { /* pathes for the distributable package generated */
+      img:     'dist/img',
+      fonts:   'dist/fonts',
+      scripts: 'dist/scripts',
+      styles:  'dist/styles'
+    },
 
     connect: {
-      // sub-task: connect:server
+      // grunt connect:server
       server: {
         options: {
           host: 'localhost',
@@ -41,23 +47,22 @@ module.exports = function(grunt) {
         separator: ';',
         stripBanners: true
       },
-      // sub-task: concat:dist
+      // grunt concat:dist
       dist: {
         src: ['src/scripts/**/*.js'],
-        dest: 'dist/scripts/<%= pkg.name %>.js'
+        dest: '<%= dist.scripts %>/<%= pkg.name %>.js'
       }
     },
 
-    // task: uglify
     uglify: {
       // global uglify options
       options: {
         preserveComments: 'some'
       },
-      // sub-task: uglify:dist
+      // grunt uglify:dist
       dist: {
         src: ['<%= concat.dist.dest %>'],
-        dest: 'dist/scripts/<%= pkg.name %>.min.js'
+        dest: '<%= dist.scripts %>/<%= pkg.name %>.min.js'
       }
     },
 
@@ -68,20 +73,56 @@ module.exports = function(grunt) {
       options: {
         relativeUrls: true
       },
-      // sub-task: less:compile
+      // grunt less:compile
       compile: {
-        files: {
-          'dist/styles/myproject.css': 'src/styles/myproject.less'
-        }
-      },
-      // sub-task: less:compress
-      compress: {
         options: {
-          yuicompress: true
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: 'main.css.map',
+          sourceMapFilename: 'dist/styles/main.css.map',
+          dumpLineNumbers: 'comments'
         },
         files: {
-          'dist/styles/myproject.min.css': 'src/styles/myproject.less'
+          'dist/styles/main.css': 'src/styles/main.less'
         }
+      },
+      // grunt less:compress
+      compress: {
+        options: {
+          cleancss: true,
+          report: 'min'
+        },
+        files: {
+          'dist/styles/main.min.css': 'src/styles/main.less'
+        }
+      }
+    },
+
+
+    /** Raw Assets **/
+
+    copy: {
+      // grunt copy:img
+      img: {
+        files: [
+          // copy all .png's from src/img to dist/img
+          {expand: true, cwd: 'src/img', src: ['**/*.png'], dest: '<%= dist.img %>'},
+        ]
+      },
+      // grunt copy:fonts
+      fonts: {
+        files: [
+          // copy all files from bower_components/bootstrap/fonts to dist/fonts
+          {expand: true, cwd: 'bower_components/bootstrap/fonts', src: ['**/*'], dest: '<%= dist.fonts %>'}
+        ]
+      },
+      // grunt copy:scripts
+      scripts: {
+        files: [
+          // copy all files from bower_components/bootstrap/fonts to dist/scripts
+          {expand: true, cwd: 'bower_components/bootstrap/js', src: ['**/*'], dest: '<%= dist.scripts %>'}
+        ]
       }
     },
 
@@ -89,7 +130,7 @@ module.exports = function(grunt) {
     /** Spritesheet Generation **/
 
     sprite: {
-      // sub-task: sprite:set
+      // grunt sprite:set
       set: {
         src: ['src/img/set/**/*.gif'],
         destImg: 'src/img/set.png',
@@ -98,25 +139,10 @@ module.exports = function(grunt) {
     },
 
 
-    /** Raw Assets **/
-
-    copy: {
-      // sub-task: copy:img
-      img: {
-        files: [
-          // copy all .png's from src/img to dist/img
-          {expand: true, cwd: 'src/img', src: ['**/*.png'], dest: 'dist/img'},
-          // copy all files from bower_components/bootstrap/fonts to dist/fonts
-          {expand: true, cwd: 'bower_components/bootstrap/fonts', src: ['**/*'], dest: 'dist/fonts'}
-        ]
-      }
-    },
-
-
     /** File Watcher **/
 
     watch: {
-      // sub-task: watch:less
+      // grunt watch:less
       less: {
         files: ['src/less/**/*.less'],
         tasks: ['less']
@@ -125,19 +151,19 @@ module.exports = function(grunt) {
 
 
 /*** isn't there a good grunt-jshint plugin out in 2014? ***/
-//     // task: jshint
+//     // grunt jshint
 //     jshint: {
 //       // gobal jshint options
 //       options: {
 //         force: true,
 //         reporter: 'checkstyle'
 //       },
-//       // sub-task: jshint:myproject
+//       // grunt jshint:myproject
 //       myproject: {
 //         src: ['Gruntfile.js', 'src/js/**/*.js'],
 //         dest: 'logs/jshint/checkstyle.xml'
 //       },
-//       // sub-task: jshint:tasks
+//       // grunt jshint:tasks
 //       tasks: {
 //         src: ['tasks/**/*.js'],
 //         dest: 'logs/jshint/tasks-checkstyle.xml'
@@ -147,9 +173,9 @@ module.exports = function(grunt) {
 
 
 /*** isn't there a good grunt+phantomjs plugin out in 2014? ***/
-//     // task: phantom
+//     // grunt phantom
 //     phantom: {
-//       // sub-task: phantom:qunit
+//       // grunt phantom:qunit
 //       qunit: {
 //         // Sophisticated Grunt feature: dynamically build the src-dest mapping
 //         // For each '*.html' file in 'src/js/tests', write a 'logs/qunit/*.xml'
@@ -168,7 +194,6 @@ module.exports = function(grunt) {
 //         }
 //       }
 //     },
-
 
   });
 
